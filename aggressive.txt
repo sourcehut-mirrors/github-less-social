@@ -1,3 +1,8 @@
 !#include list.txt
 
+! Remove all URLs cached by GitHub’s CDN as many of these are badges and
+! other distractions
 ||camo.githubusercontent.com/*$domain=github.com
+
+! Sponsors in the feed is also distracting
+github.com##.js-feed-item-component a[aria-label^="Sponsor "]
