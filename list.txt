@@ -19,3 +19,10 @@ github.com###issuecomment-new .timeline-comment~.Box:last-child
 ! Achievements… is this Steam? Don’t make your work feel gamified by
 ! Microsoft’s system
 github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
+
+! Contributor image blocks are big and distracting; it would be better
+! to have a CONTRIBUTORS.* file
+github.com##img[data-canonical-src^="https://contributors-img.web.app"]
+
+! Donations similarly
+github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
