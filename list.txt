@@ -10,7 +10,7 @@ github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_sta
 ! Social reactions are fine, but the bright colors in the feed are
 ! distracting. The will remain available as soon as you click the
 ! project
-github.com##dashboard .social-reactions, .js-inline-dashboard-render .js-feed-item-component .js-comment
+github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
 
 ! The big sponsor button is distracting when all you want to do is open
 ! a new issue
