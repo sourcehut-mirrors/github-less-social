@@ -29,6 +29,9 @@ github.com##[aria-label*="recommendation"][aria-label*="by GitHub staff"]:upward
 ! Microsoft’s system
 github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
 
+! Trending?? Is this Twitter too?
+github.com##a[href="/trending/developers"]:upward(.Box-header):upward(.Box)
+
 ! Contributor image blocks are big and distracting; it would be better
 ! to have a CONTRIBUTORS.* file
 github.com##img[data-canonical-src^="https://contributors-img.web.app"]
