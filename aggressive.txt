@@ -1,3 +1,6 @@
+! SPDX-License-Identifier: CC-BY-4.0
+! Copyright © 2022 toastal
+
 !#include list.txt
 
 ! Remove all URLs cached by GitHub’s CDN as many of these are badges and

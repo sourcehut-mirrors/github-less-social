@@ -16,6 +16,9 @@ github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-comp
 ! a new issue
 github.com###issuecomment-new .timeline-comment~.Box:last-child
 
+! Anything recommended by GitHub is probably a evil
+github.com##[aria-label*="recommendation"][aria-label*="by GitHub staff"]:upward(article)
+
 ! Achievements… is this Steam? Don’t make your work feel gamified by
 ! Microsoft’s system
 github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
