@@ -1,5 +1,11 @@
 ! SPDX-License-Identifier: CC-BY-4.0
 ! Copyright © 2022 toastal
+! Title: GitHub Less Social
+! Version: 202205170137
+! Last modified: 17 May 2022 01:37 +0700
+! Homepage: https://sr.ht/~toastal/github-less-social/
+! License: https://git.sr.ht/~toastal/github-less-social/LICENSE
+! Support: https://todo.sr.ht/~toastal/github-less-social
 
 ! Explore is just trying to get you to engage with other projects
 github.com##aside[aria-label="Explore"]
