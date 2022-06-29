@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1656239181,
+        "narHash": "sha256-wW1xRFBn376yGloXZ4QzBE4hjipMawpV18Lshd9QSPw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f2537a505d45c31fe5d9c27ea9829b6f4c4e6ac5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1656239181,
+        "narHash": "sha256-wW1xRFBn376yGloXZ4QzBE4hjipMawpV18Lshd9QSPw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "f2537a505d45c31fe5d9c27ea9829b6f4c4e6ac5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "sourcehut-asciidoc-renderer": "sourcehut-asciidoc-renderer"
+      }
+    },
+    "sourcehut-asciidoc-renderer": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1656386722,
+        "narHash": "sha256-shSRcqP0K//Xd3y0YV6oInKB+ebSimzCdbGRecwSX4U=",
+        "owner": "~toastal",
+        "repo": "sourcehut-asciidoc-renderer",
+        "rev": "8b293001137964ebb8e1a8fadb77bb5d62a1f50c",
+        "type": "sourcehut"
+      },
+      "original": {
+        "owner": "~toastal",
+        "repo": "sourcehut-asciidoc-renderer",
+        "type": "sourcehut"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

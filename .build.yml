@@ -1,0 +1,41 @@
+# This build would not be necessary if Sourcehut would support AsciiDoc
+image: nixos/unstable
+packages:
+   - nixos.cachix
+   - nixos.curl
+   - nixos.jq
+   - nixos.nixUnstable
+environment:
+   repo_id: "142654"
+   repo_name: "github-less-social"
+   cachix_cache: "toastal"
+secrets:
+   - 36056010-e119-4f1c-b496-67a472432a50 # auth
+   - 00dd8ea2-c43c-4aed-81f1-39fbcf192ca9 # cachix
+tasks:
+   - prepare: |
+      # Enable flakes.
+      mkdir -p $HOME/.config/nix
+      echo "experimental-features = nix-command flakes" > $HOME/.config/nix/nix.conf
+      # Setup Cachix
+      set +x
+      cachix authtoken "$(<$HOME/.${cachix_cache}-cachix-auth-token)"
+      cachix use $cachix_cache
+   - readme: |
+      cd "$repo_name"
+      nix build ".#${repo_name}-readme"  --out-link result-readme --json \
+        | jq -r '.[].outputs | to_entries[].value' \
+        | cachix push $cachix_cache
+      set +x
+      jq -sR '{
+        "query": "mutation UpdateRepo($id: Int!, $readme: String!) {
+          updateRepository(id: $id, input: { readme: $readme }) { id }
+        }", "variables": {
+          "id": '$repo_id',
+          "readme": .
+        } }' < "$(realpath result-readme)/share/doc/README.html" \
+        | curl \
+          --compressed --fail-with-body \
+          --oauth2-bearer "$(<$HOME/.${repo_name}-auth-token)" \
+          -H "Content-Type: application/json" \
+          -d@- "https://git.sr.ht/query"

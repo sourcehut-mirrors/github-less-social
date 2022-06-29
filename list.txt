@@ -1,0 +1,21 @@
+! SPDX-License-Identifier: CC-BY-4.0
+! Copyright © 2022 toastal
+
+! Explore is just trying to get you to engage with other projects
+github.com##aside[aria-label="Explore"]
+
+! Every follow and watch started is mostly noisy and not useful
+github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started)
+
+! Social reactions are fine, but the bright colors in the feed are
+! distracting. The will remain available as soon as you click the
+! project
+github.com##dashboard .social-reactions, .js-inline-dashboard-render .js-feed-item-component .js-comment
+
+! The big sponsor button is distracting when all you want to do is open
+! a new issue
+github.com###issuecomment-new .timeline-comment~.Box:last-child
+
+! Achievements… is this Steam? Don’t make your work feel gamified by
+! Microsoft’s system
+github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
