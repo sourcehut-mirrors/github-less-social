@@ -11,8 +11,5 @@
 ! other distractions
 ||camo.githubusercontent.com/*$domain=github.com
 
-! Sponsors in the feed is also distracting
 github.com##.js-feed-item-component a[aria-label^="Sponsor "]
-
-! Don’t try to tell me what I’m interested in
 github.com##aside[aria-label="Star Topics"]

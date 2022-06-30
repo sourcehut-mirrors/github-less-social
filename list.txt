@@ -1,40 +1,16 @@
 ! SPDX-License-Identifier: CC-BY-4.0
 ! Copyright © 2022 toastal
 ! Title: GitHub Less Social
-! Version: 202205170137
-! Last modified: 17 May 2022 01:37 +0700
 ! Homepage: https://sr.ht/~toastal/github-less-social/
 ! License: https://git.sr.ht/~toastal/github-less-social/LICENSE
 ! Support: https://todo.sr.ht/~toastal/github-less-social
 
-! Explore is just trying to get you to engage with other projects
 github.com##aside[aria-label="Explore"]
-
-! Every follow and watch started is mostly noisy and not useful
 github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started)
-
-! Social reactions are fine, but the bright colors in the feed are
-! distracting. The will remain available as soon as you click the
-! project
 github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
-
-! The big sponsor button is distracting when all you want to do is open
-! a new issue
 github.com###issuecomment-new .timeline-comment~.Box:last-child
-
-! Anything recommended by GitHub is probably a evil
-github.com##[aria-label*="recommendation"][aria-label*="by GitHub staff"]:upward(article)
-
-! Achievements… is this Steam? Don’t make your work feel gamified by
-! Microsoft’s system
+github.com##[aria-label*="by GitHub staff"][aria-label*="recommendation"]:upward(article)
 github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
-
-! Trending?? Is this Twitter too?
 github.com##a[href="/trending/developers"]:upward(.Box-header):upward(.Box)
-
-! Contributor image blocks are big and distracting; it would be better
-! to have a CONTRIBUTORS.* file
 github.com##img[data-canonical-src^="https://contributors-img.web.app"]
-
-! Donations similarly
 github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
