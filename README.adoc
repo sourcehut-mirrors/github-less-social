@@ -9,7 +9,7 @@ TIP: _Do_ encourage projects to migrate to or support mirrors on open source cod
 
 It’s required that you start with a browser ad blocker add-on that supports filters. My suggestion is https://ublockorigin.com/[uBlock Origin] which is available on many platforms and the following instructions are _only_ for this add-on.
 
-.To add GitHub Less Social list
+.To add GitHub Less Social filter list
 . Open uBlock Origin’s settings
 . Go to “Filter lists”
 . Scroll to the bottom of the list to “Custom”
@@ -23,7 +23,11 @@ WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the other
 
 == License
 
-This project is licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/[CC BY 4.0])
+This project is licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/[CC BY 4.0]) – see the `LICENSE` file in this project for details.
+
+== Contributing
+
+Send patches to https://lists.sr.ht/~toastal/github-less-social
 
 == Future goals
 
