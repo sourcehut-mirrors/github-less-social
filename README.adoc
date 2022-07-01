@@ -3,6 +3,8 @@ GitHub Less Social
 
 I don’t wish to use the proprietary code forge, but when I do I want less social features in my face trying to get me to ‘engage’. This filter list looks to hide features that involve distractions and clutter on the platform. The base list tries to clean up the feeds quite a bit, pushing some of the bright colors and button to when you actually click into the item for a detail view.
 
+To give GitHub some credit, it’s because they do a decent job with `aria-*` tags for accessibility and sane markup that the filter list concise.
+
 TIP: _Do_ encourage projects to migrate to or support mirrors on open source code forges like the one here on Sourcehut.
 
 == Usage
@@ -19,7 +21,7 @@ It’s required that you start with a browser ad blocker add-on that supports fi
 
 For a more aggressive option (more likely to break things you may want to see), use `https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt` instead.
 
-WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware that phones home—and they are trying to monopolize the internet so it’s best browse with any alternative.
+WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware.
 
 == License
 
