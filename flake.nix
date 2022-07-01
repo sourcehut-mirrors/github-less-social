@@ -22,9 +22,9 @@
     in
     {
       packages = forAllSystems (system:
-        let
-          pkgs = import nixpkgs { inherit system; };
-        in
+        #let
+        #  pkgs = import nixpkgs { inherit system; };
+        #in
         {
           "${name}-readme" = sourcehut-asciidoc-renderer.renderAsciiDoc {
             inherit system;
