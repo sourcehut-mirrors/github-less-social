@@ -3,7 +3,7 @@ GitHub Less Social
 
 I don’t wish to use the proprietary code forge, but when I do I want less social features in my face trying to get me to ‘engage’. This filter list looks to hide features that involve distractions and clutter on the platform. The base list tries to clean up the feeds quite a bit, pushing some of the bright colors and button to when you actually click into the item for a detail view.
 
-To give GitHub some credit, it’s because they do a decent job with `aria-*` tags for accessibility and sane markup that the filter list concise.
+To give GitHub some credit, it’s because they do a decent job with `aria-*` tags for accessibility and sane markup that the filter list gets to be concise.
 
 TIP: _Do_ encourage projects to migrate to or support mirrors on open source code forges like the one here on Sourcehut.
 
@@ -53,4 +53,4 @@ Crowdfunding::
 
 Cryptocurrency::
 * Bitcoin: link:bitcoin://{bitcoin-address}?message={crypto-msg}[{bitcoin-address}] ({keybase-verified}#690220ca450a3e73ff800c3e059de111d9c1cd2fcdaf3d17578ad312093fff2c0f[verified on Keybase])
-* Zcach: link:zcash://{zcash-address}?message={crypto-msg}[{zcash-address}] ({keybase-verified}#65c0114a3c8ffb46e39e4d8b5ee0c06c9eb97a02c4f6c42a2b157ca83b8c47c70f[verified on Keybase])
+* Zcash: link:zcash://{zcash-address}?message={crypto-msg}[{zcash-address}] ({keybase-verified}#65c0114a3c8ffb46e39e4d8b5ee0c06c9eb97a02c4f6c42a2b157ca83b8c47c70f[verified on Keybase])
