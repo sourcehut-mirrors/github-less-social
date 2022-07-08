@@ -1,4 +1,4 @@
-# This build would not be necessary if Sourcehut would support AsciiDoc
+# This build would not be necessary if SourceHut would support AsciiDoc
 image: nixos/unstable
 packages:
    - nixos.cachix

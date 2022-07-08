@@ -5,7 +5,7 @@ I don’t wish to use the proprietary code forge, but when I do I want less soci
 
 To give GitHub some credit, it’s because they do a decent job with `aria-*` tags for accessibility and sane markup that the filter list gets to be concise.
 
-TIP: _Do_ encourage projects to migrate to or support mirrors on open source code forges like the one here on Sourcehut.
+TIP: _Do_ encourage projects to migrate to or support mirrors on open source code forges like the one here on SourceHut.
 
 == Usage
 
