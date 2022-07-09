@@ -13,3 +13,5 @@
 
 github.com##.js-feed-item-component a[aria-label^="Sponsor "]
 github.com##aside[aria-label="Star Topics"]
+github.com##.TimelineItem .avatar
+github.com##.page-responsive .timeline-comment--caret::before,.page-responsive .timeline-comment--caret::after
