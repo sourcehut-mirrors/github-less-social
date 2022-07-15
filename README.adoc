@@ -25,7 +25,7 @@ WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the other
 
 == License
 
-This project is licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]) – see the `LICENSE` file in this project for details.
+This project is licensed under Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]) – see the `LICENSE` file in this project for details.
 
 == Contributing
 
@@ -37,7 +37,7 @@ Don’t forget to add yourself to `./CONTRIBUTORS.dhall`.
 
 Do some stuff with CSS which is outside filter list scope. Some ideas:
 
-• `filter: grayscale(1.0)` avatar images and emojis until `:hover` or `:focus` (I have this in my own `userContent.css` but still unsure on the best way to distribute it.
+• `filter: grayscale(1.0)` avatar images and emojis until `:hover` or `:focus` (I have this in my own `userContent.css` but still unsure on the best way to distribute it)
 
 == Funding
 
