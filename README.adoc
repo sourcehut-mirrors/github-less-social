@@ -9,7 +9,7 @@ TIP: _Do_ encourage projects to migrate to or support mirrors on open source cod
 
 == Usage
 
-It’s required that you start with a browser ad blocker add-on that supports filters. My suggestion is https://ublockorigin.com/[uBlock Origin] which is available on many platforms and the following instructions are _only_ for this add-on.
+It’s required that you start with an ad blocker add-on that supports filters. My suggestion is https://ublockorigin.com/[uBlock Origin] which is available on many platforms and the following instructions are _only_ for this add-on.
 
 .To add GitHub Less Social filter list
 . Open uBlock Origin’s settings
@@ -19,13 +19,13 @@ It’s required that you start with a browser ad blocker add-on that supports fi
 . Add `https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt` to a new line
 . Click the big check mark button in the actions bar to apply
 
-For a more aggressive option (more likely to break things you may want to see), use `https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt` instead.
+For a more aggressive option (more likely to hide things you may want to see), use `https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt` instead.
 
 WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware.
 
 == License
 
-This project is licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/[CC BY 4.0]) – see the `LICENSE` file in this project for details.
+This project is licensed under Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]) – see the `LICENSE` file in this project for details.
 
 == Contributing
 
@@ -37,7 +37,7 @@ Don’t forget to add yourself to `./CONTRIBUTORS.dhall`.
 
 Do some stuff with CSS which is outside filter list scope. Some ideas:
 
-* `filter: grayscale(1.0)` avatar images and emojis until `:hover` or `:focus`
+• `filter: grayscale(1.0)` avatar images and emojis until `:hover` or `:focus` (I have this in my own `userContent.css` but still unsure on the best way to distribute it.
 
 == Funding
 
@@ -49,8 +49,8 @@ If you want to make a small contribution to the maintanence of this & other proj
 :keybase-verified: link:https://keybase.io/toastal/sigchain
 
 Crowdfunding::
-* https://liberapay.com/toastal/[Liberapay]
+• https://liberapay.com/toastal/[Liberapay]
 
 Cryptocurrency::
-* Bitcoin: link:bitcoin://{bitcoin-address}?message={crypto-msg}[{bitcoin-address}] ({keybase-verified}#690220ca450a3e73ff800c3e059de111d9c1cd2fcdaf3d17578ad312093fff2c0f[verified on Keybase])
-* Zcash: link:zcash://{zcash-address}?message={crypto-msg}[{zcash-address}] ({keybase-verified}#65c0114a3c8ffb46e39e4d8b5ee0c06c9eb97a02c4f6c42a2b157ca83b8c47c70f[verified on Keybase])
+• Bitcoin: link:bitcoin://{bitcoin-address}?message={crypto-msg}[{bitcoin-address}] ({keybase-verified}#690220ca450a3e73ff800c3e059de111d9c1cd2fcdaf3d17578ad312093fff2c0f[verified on Keybase])
+• Zcash: link:zcash://{zcash-address}?message={crypto-msg}[{zcash-address}] ({keybase-verified}#65c0114a3c8ffb46e39e4d8b5ee0c06c9eb97a02c4f6c42a2b157ca83b8c47c70f[verified on Keybase])
