@@ -1,6 +1,7 @@
 {-
-Contributors to github-less-social
-==================================
+┌────────────────────────────────────┐
+│ Contributors to github-less-social │
+╘════════════════════════════════════╛
 
 Sorted by date of contribution, this file defines contributors in Dhall format
 for easy manipulation and consumption.
