@@ -1,8 +1,8 @@
-! SPDX-License-Identifier: CC-BY-4.0
+! SPDX-License-Identifier: CC-BY-SA-4.0
 ! Copyright © 2022 toastal
 ! Title: GitHub Less Social — Aggressive
 ! Homepage: https://sr.ht/~toastal/github-less-social/
-! License: https://git.sr.ht/~toastal/github-less-social/LICENSE
+! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/LICENSE
 ! Support: https://todo.sr.ht/~toastal/github-less-social
 
 !#include list.txt
