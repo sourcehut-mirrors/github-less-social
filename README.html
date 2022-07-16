@@ -1,0 +1,137 @@
+<div class="paragraph">
+<p>GitHub Less Social
+══════════════════</p>
+</div>
+<div class="paragraph">
+<p>I don’t wish to use the proprietary code forge, but when I do I want less social features in my face trying to get me to ‘engage’. This filter list looks to hide features that involve distractions and clutter on the platform. The base list tries to clean up the feeds quite a bit, pushing some of the bright colors and button to when you actually click into the item for a detail view.</p>
+</div>
+<div class="paragraph">
+<p>To give GitHub some credit, it’s because they do a decent job with <code>aria-*</code> tags for accessibility and sane markup that the filter list gets to be concise.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<em>Do</em> encourage projects to migrate to or support mirrors on open source code forges like the one here on SourceHut.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect1">
+<h2 id="_usage">Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It’s required that you start with an ad blocker add-on that supports filters. My suggestion is <a href="https://ublockorigin.com/">uBlock Origin</a> which is available on many platforms and the following instructions are <em>only</em> for this add-on.</p>
+</div>
+<div class="olist arabic">
+<div class="title">To add GitHub Less Social filter list</div>
+<ol class="arabic">
+<li>
+<p>Open uBlock Origin’s settings</p>
+</li>
+<li>
+<p>Go to “Filter lists”</p>
+</li>
+<li>
+<p>Scroll to the bottom of the list to “Custom”</p>
+</li>
+<li>
+<p>Enable “Import…” if not checked already</p>
+</li>
+<li>
+<p>Add <code><a href="https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt" class="bare">https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt</a></code> to a new line</p>
+</li>
+<li>
+<p>Click the big check mark button in the actions bar to apply</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For a more aggressive option (more likely to hide things you may want to see), use <code><a href="https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt" class="bare">https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt</a></code> instead.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_license">License</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This project is licensed under Creative Commons Attribution-ShareAlike 4.0 International (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>) – see the <code>LICENSE</code> file in this project for details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_contributing">Contributing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Send patches to the mailing list: <a href="https://lists.sr.ht/~toastal/github-less-social" class="bare">https://lists.sr.ht/~toastal/github-less-social</a></p>
+</div>
+<div class="paragraph">
+<p>Don’t forget to add yourself to <code>./CONTRIBUTORS.dhall</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_future_goals">Future goals</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Do some stuff with CSS which is outside filter list scope. Some ideas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>filter: grayscale(1.0)</code> avatar images and emojis until <code>:hover</code> or <code>:focus</code> (I have this in my own <code>userContent.css</code> but still unsure on the best way to distribute it)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_funding">Funding</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to make a small contribution to the maintanence of this &amp; other projects.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Crowdfunding</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://liberapay.com/toastal/">Liberapay</a></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Cryptocurrency</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Bitcoin: <a href="bitcoin://39nLVxrXPnD772dEqWFwfZZbfTv5BvV89y?message=Funding%20toastal%E2%80%99s%20github-less-social%20development">39nLVxrXPnD772dEqWFwfZZbfTv5BvV89y</a> (<a href="https://keybase.io/toastal/sigchain#690220ca450a3e73ff800c3e059de111d9c1cd2fcdaf3d17578ad312093fff2c0f">verified on Keybase</a>)</p>
+</li>
+<li>
+<p>Zcash: <a href="zcash://t1a9pD1D2SDTTd7dbc15KnKsyYXtGcjHuZZ?message=Funding%20toastal%E2%80%99s%20github-less-social%20development">t1a9pD1D2SDTTd7dbc15KnKsyYXtGcjHuZZ</a> (<a href="https://keybase.io/toastal/sigchain#65c0114a3c8ffb46e39e4d8b5ee0c06c9eb97a02c4f6c42a2b157ca83b8c47c70f">verified on Keybase</a>)</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>

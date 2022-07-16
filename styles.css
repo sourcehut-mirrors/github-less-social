@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         GitHub Less Social
+@namespace    github.com
+@description  Remove some distracting colors
+@author       toastal <toastal@posteo.net> (https://toast.al)
+@homepageURL  https://sr.ht/~toastal/github-less-social/
+@supportURL   https://todo.sr.ht/~toastal/github-less-social
+@updateURL    https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css
+@version      2022.07.16
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+	.avatar,
+	.avatar-user,
+	.filter-item,
+	.repo-language-color,
+	.social-reaction-summary-item .social-button-emoji {
+      transition: filter 200ms ease-out;
+	}
+	:is(.avatar, .avatar-user, .filter-item, .repo-language-color):not(:hover, :focus),
+	.social-reaction-summary-item:not(:hover, :focus) .social-button-emoji {
+      filter: grayscale(1.0) brightness(1.125) contrast(1.075);
+	}
+}
