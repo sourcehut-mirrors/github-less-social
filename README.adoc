@@ -21,6 +21,8 @@ It’s required that you start with an ad blocker add-on that supports filters. 
 
 For a more aggressive option (more likely to hide things you may want to see), use `https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt` instead.
 
+Additionally I have a user style @ `https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css` that will tone down some of the bright colors like those from avatars and emoji (but will show color on hover).
+
 WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware.
 
 == License
@@ -32,12 +34,6 @@ This project is licensed under Creative Commons Attribution-ShareAlike 4.0 Inter
 Send patches to the mailing list: https://lists.sr.ht/~toastal/github-less-social
 
 Don’t forget to add yourself to `./CONTRIBUTORS.dhall`.
-
-== Future goals
-
-Do some stuff with CSS which is outside filter list scope. Some ideas:
-
-• `filter: grayscale(1.0)` avatar images and emojis until `:hover` or `:focus` (I have this in my own `userContent.css` but still unsure on the best way to distribute it)
 
 == Funding
 
