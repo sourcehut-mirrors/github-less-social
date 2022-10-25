@@ -7,7 +7,7 @@
 ! Support: https://todo.sr.ht/~toastal/github-less-social
 
 github.com##aside[aria-label="Explore"]
-github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started)
+github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started, [classes*="watch_started"], [classes=*="follow"])
 github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
 github.com###issuecomment-new .timeline-comment~.Box:last-child
 github.com##[aria-label*="by GitHub staff"][aria-label*="recommendation"]:upward(article)
