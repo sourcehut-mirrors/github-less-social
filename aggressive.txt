@@ -3,7 +3,7 @@
 ! Title: GitHub Less Social — Aggressive
 ! Version: 2022.07.16
 ! Homepage: https://sr.ht/~toastal/github-less-social/
-! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/LICENSE
+! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/LICENSE.txt
 ! Support: https://todo.sr.ht/~toastal/github-less-social
 
 !#include list.txt
