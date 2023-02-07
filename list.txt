@@ -15,3 +15,4 @@ github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
 github.com##a[href="/trending/developers"]:upward(.Box-header):upward(.Box)
 github.com##img[data-canonical-src^="https://contributors-img.web.app"]
 github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
+github.com##main > :first-child:has(h1:first-child + p)
