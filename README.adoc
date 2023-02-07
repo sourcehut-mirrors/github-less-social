@@ -27,7 +27,7 @@ WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the other
 
 == License
 
-This project is licensed under Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]) – see the `LICENSE.txt` file in this project for details.
+This project is licensed under GNU Lesser General Public License, version 2.1 (https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html[LGPL-2.1-or-later]) – see the `COPYING.txt` and `COPYING.lesser.text` files in this project for details.
 
 == Contributing
 
