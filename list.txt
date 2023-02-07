@@ -17,3 +17,4 @@ github.com##a[href="/trending/developers"]:upward(.Box-header):upward(.Box)
 github.com##img[data-canonical-src^="https://contributors-img.web.app"]
 github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
 github.com##form[action*="promo"]
+github.com##.gist-banner.gist-detail-intro
