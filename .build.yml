@@ -26,6 +26,12 @@ tasks:
       nix build ".#${repo_name}-readme"  --out-link result-readme --json \
         | jq -r '.[].outputs | to_entries[].value' \
         | cachix push $cachix_cache
+      current_banch_name="$(git rev-parse --abbrev-ref HEAD)"
+      default_branch_name="$(basename $(git symbolic-ref refs/remotes/origin/HEAD))"
+      if [[ "$current_banch_name" != "$default_branch_name" ]]; then
+         echo "Not on default branch, ${default_branch_name}. README will not be updated."
+         exit 0
+      fi
       set +x
       jq -sR '{
         "query": "mutation UpdateRepo($id: Int!, $readme: String!) {
