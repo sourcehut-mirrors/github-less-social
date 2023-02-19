@@ -15,11 +15,18 @@
 	.avatar-user,
 	.filter-item,
 	.repo-language-color,
-	.social-reaction-summary-item .social-button-emoji {
-      transition: filter 200ms ease-out;
+	.social-reaction-summary-item .social-button-emoji,
+	[id^="sponsor-"],
+	[href^="/sponsors/"] {
+      transition-property: filter, opacity;
+		transition-duration: 200ms;
+		transition-timing-function: ease-out;
 	}
 	:is(.avatar, .avatar-user, .filter-item, .repo-language-color):not(:hover, :focus),
 	.social-reaction-summary-item:not(:hover, :focus) .social-button-emoji {
       filter: grayscale(1.0) brightness(1.125) contrast(1.075);
+	}
+	:is([id^="sponsor-"], [href^="/sponsors/"]):not(:hover, :focus) {
+		opacity: 0.75;
 	}
 }
