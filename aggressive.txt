@@ -1,3 +1,4 @@
+
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2023 toastal
 ! Title: GitHub Less Social — Aggressive
@@ -17,3 +18,4 @@ github.com##aside[aria-label="Star Topics"]
 github.com##.TimelineItem .avatar
 github.com##.page-responsive .timeline-comment--caret::before,.page-responsive .timeline-comment--caret::after
 github.com###issuecomment-new .protip
+github.com###issuecomment-new > div:has(.octicon-info)
