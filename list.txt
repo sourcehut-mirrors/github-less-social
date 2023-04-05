@@ -18,3 +18,4 @@ github.com##img[data-canonical-src^="https://contributors-img.web.app"]
 github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
 github.com##form[action*="promo"]
 github.com##.gist-banner.gist-detail-intro
+github.com##.blankslate p:has(a[href*="youtube.com/GitHub"])
