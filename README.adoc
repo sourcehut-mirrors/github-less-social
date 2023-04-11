@@ -23,7 +23,7 @@ For a more aggressive option (more likely to hide things you may want to see), u
 
 Additionally I have a user style @ `https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css` that will tone down some of the bright colors like those from avatars and emoji (but will show color on hover).
 
-WARNING: Don’t use Google Chrome. Firefox, Librewolf, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware.
+WARNING: Don’t use Google Chrome. Firefox, LibreWolf, Mullvad, Brave, and all the others are a better option. If you’re concerned about ads, you should be aware that Google’s entire browser is adware.
 
 == License
 
