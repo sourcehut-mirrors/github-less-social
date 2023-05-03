@@ -19,7 +19,7 @@ tasks:
       echo "experimental-features = nix-command flakes" > $HOME/.config/nix/nix.conf
       # Setup Cachix
       set +x
-      cachix authtoken --stdin <<< "$HOME/.${cachix_cache}-cachix-auth-token"
+      cachix authtoken --stdin < "$HOME/.${cachix_cache}-cachix-auth-token"
       cachix use $cachix_cache
    - readme: |
       cd "$repo_name"
