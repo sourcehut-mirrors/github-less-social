@@ -2,7 +2,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2023 toastal
 ! Title: GitHub Less Social — Aggressive
-! Version: 2023.02.07
+! Version: 2023.05.10
 ! Homepage: https://sr.ht/~toastal/github-less-social/
 ! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/COPYING.lesser.txt
 ! Support: https://todo.sr.ht/~toastal/github-less-social
@@ -19,3 +19,4 @@ github.com##.TimelineItem .avatar
 github.com##.page-responsive .timeline-comment--caret::before,.page-responsive .timeline-comment--caret::after
 github.com###issuecomment-new .protip
 github.com###issuecomment-new > div:has(.octicon-info)
+github.com##.dashboard-changelog:upward(aside,div)
