@@ -1,12 +1,13 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2023 toastal
 ! Title: GitHub Less Social
-! Version: 2023.02.07
+! Version: 2023.05.10
 ! Homepage: https://sr.ht/~toastal/github-less-social/
 ! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/COPYING.lesser.txt
 ! Support: https://todo.sr.ht/~toastal/github-less-social
 
-github.com##aside[aria-label="Explore"]
+github.com##[aria-label="Explore"]
+github.com##[aria-label="Explore repositories"]
 github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started, [classes*="watch_started"], [classes*="follow"])
 github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started, [classes*="watch_started"], [classes*="follow"]):upward(.Details)
 github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
