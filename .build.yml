@@ -11,7 +11,7 @@ environment:
    cachix_cache: "toastal"
 secrets:
    - 36056010-e119-4f1c-b496-67a472432a50 # auth
-   - 00dd8ea2-c43c-4aed-81f1-39fbcf192ca9 # cachix
+   - d44053aa-7f58-49fc-9bb9-ed6930cd7f68 # cachix
 tasks:
    - prepare: |
       # Enable flakes.
