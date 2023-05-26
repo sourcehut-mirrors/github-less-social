@@ -14,24 +14,29 @@ secrets:
    - d44053aa-7f58-49fc-9bb9-ed6930cd7f68 # cachix
 tasks:
    - prepare: |
+      set -eo pipefail
       # Enable flakes.
-      mkdir -p $HOME/.config/nix
+      mkdir -p $HOME/.config/{nix,nixpkgs}
       echo "experimental-features = nix-command flakes" > $HOME/.config/nix/nix.conf
       # Setup Cachix
       set +x
       cachix authtoken --stdin < "$HOME/.${cachix_cache}-cachix-auth-token"
+      set -x
       cachix use $cachix_cache
    - readme: |
+      set -eo pipefail
       cd "$repo_name"
-      nix build ".#${repo_name}-readme"  --out-link result-readme --json \
+
+      #current_banch_name="$(git rev-parse --abbrev-ref HEAD)"
+      #default_branch_name="$(basename $(git symbolic-ref refs/remotes/origin/HEAD))"
+      #if [[ "$current_banch_name" != "$default_branch_name" ]]; then
+      #   echo "Not on default branch, ${default_branch_name}. README will not be updated."
+      #   exit 0
+      #fi
+
+      nix --accept-flake-config build ".#${repo_name}-readme"  --out-link result-readme --json \
         | jq -r '.[].outputs | to_entries[].value' \
         | cachix push $cachix_cache
-      current_banch_name="$(git rev-parse --abbrev-ref HEAD)"
-      default_branch_name="$(basename $(git symbolic-ref refs/remotes/origin/HEAD))"
-      if [[ "$current_banch_name" != "$default_branch_name" ]]; then
-         echo "Not on default branch, ${default_branch_name}. README will not be updated."
-         exit 0
-      fi
       set +x
       jq -sR '{
         "query": "mutation UpdateRepo($id: Int!, $readme: String!) {
