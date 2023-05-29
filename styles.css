@@ -29,4 +29,10 @@
 	:is([id^="sponsor-"], [href^="/sponsors/"]):not(:hover, :focus) {
 		opacity: 0.75;
 	}
+	[data-target="get-repo.modal"] :is(.tabnav-tabs li:has([data-tab="cloud"]), .cloud-panel) {
+		opacity: 0.25;
+		cursor: not-allowed;
+		pointer-events: none;
+		user-select: none;
+	}
 }
