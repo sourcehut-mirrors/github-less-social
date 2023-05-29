@@ -29,7 +29,8 @@
 	:is([id^="sponsor-"], [href^="/sponsors/"]):not(:hover, :focus) {
 		opacity: 0.75;
 	}
-	.starring-container, .js-social-container {
+	.starring-container, .js-social-container,
+	.Header :is(a[href="/codespaces"], a[href="/explore"], a[href="/marketplace"]) {
 		opacity: 0.5;
 	}
 	[data-target="get-repo.modal"] :is(.tabnav-tabs li:has([data-tab="cloud"]), .cloud-panel) {
