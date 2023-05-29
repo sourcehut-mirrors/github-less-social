@@ -8,6 +8,7 @@
 
 github.com##[aria-label="Explore"]
 github.com##[aria-label="Explore repositories"]
+github.com##.js-yearly-contributions
 github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started, [classes*="watch_started"], [classes*="follow"])
 github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started, [classes*="watch_started"], [classes*="follow"]):upward(.Details)
 github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
