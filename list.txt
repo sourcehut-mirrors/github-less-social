@@ -21,3 +21,4 @@ github.com##form[action*="promo"]
 github.com##.gist-banner.gist-detail-intro
 github.com##.blankslate p:has(a[href*="youtube.com/GitHub"])
 github.com##.flash:has(a[href^="/join"])
+github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Suggested Workflows"))
