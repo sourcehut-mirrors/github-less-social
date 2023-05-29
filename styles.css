@@ -29,6 +29,9 @@
 	:is([id^="sponsor-"], [href^="/sponsors/"]):not(:hover, :focus) {
 		opacity: 0.75;
 	}
+	.starring-container, .js-social-container {
+		opacity: 0.5;
+	}
 	[data-target="get-repo.modal"] :is(.tabnav-tabs li:has([data-tab="cloud"]), .cloud-panel) {
 		opacity: 0.25;
 		cursor: not-allowed;
