@@ -19,5 +19,6 @@ github.com##.page-responsive .timeline-comment--caret::before,.page-responsive .
 github.com###issuecomment-new .protip
 github.com###issuecomment-new > div:has(.octicon-info)
 github.com##.dashboard-changelog:upward(aside,div)
-github.com##.Header a:is([href="/codespaces"], [href="/explore"], [href="/marketplace"])
-github.com##.ActionListItem:has(a:is([href*="codespaces"], [href$="explore"]))
+github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"])
+github.com##.ActionListItem:has(a:is([href^="/codespaces"], [href^="/explore"]))
+github.com##.diffbar-item:has(a[href^="/codespaces"])
