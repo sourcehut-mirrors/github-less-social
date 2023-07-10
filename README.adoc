@@ -37,7 +37,7 @@ Don’t forget to add yourself to `./CONTRIBUTORS.dhall`.
 
 == Funding
 
-If you want to make a small contribution to the maintanence of this & other projects.
+If you want to make a small contribution to the maintenance of this & other projects.
 
 :bitcoin-address: 39nLVxrXPnD772dEqWFwfZZbfTv5BvV89y
 :zcash-address: t1a9pD1D2SDTTd7dbc15KnKsyYXtGcjHuZZ
