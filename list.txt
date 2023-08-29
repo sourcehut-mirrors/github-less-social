@@ -1,7 +1,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2023 toastal
 ! Title: GitHub Less Social
-! Version: 2023.05.10
+! Version: 2023.08.29
 ! Homepage: https://sr.ht/~toastal/github-less-social/
 ! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/COPYING.lesser.txt
 ! Support: https://todo.sr.ht/~toastal/github-less-social
@@ -26,3 +26,4 @@ github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Sugg
 github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="copilot"], [href*="enterprise_plan"], [href$="marketplace"], [href*="tab=stars"]))
 github.com##.AppHeader .Overlay-footer .color-fg-subtle.text-small
 github.com##.js-feed-item-component footer .js-comment
+github.com##[data-testid="copilot-popover-button"]
