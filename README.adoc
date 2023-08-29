@@ -1,7 +1,7 @@
 GitHub Less Social
 ==================
 
-I don’t wish to use the proprietary code forge, but when I do I want less social features in my face trying to get me to ‘engage’. This filter list looks to hide features that involve distractions and clutter on the platform. The base list tries to clean up the feeds quite a bit, pushing some of the bright colors and button to when you actually click into the item for a detail view.
+I don’t wish to use the proprietary code forge, but when I do I want less social features in my face trying to get me to ‘engage’. This filter list looks to hide features that involve distractions and clutter on the platform. The base list tries to clean up the feeds quite a bit, pushing some of the bright colors and button to when you actually click into the item for a detail view, as well as the most gross upsells.
 
 To give Microsoft GitHub some credit, it’s because they do a decent job with `aria-*` tags for accessibility and [.line-through]#sane markup# (markup _used_ to be sane, but the more GitHub moves towards the Tailwind-esque fad, the more meaningful classes and IDs have begun to disappear) that the filter list gets to be concise.
 
