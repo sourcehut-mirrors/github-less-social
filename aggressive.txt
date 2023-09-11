@@ -22,3 +22,8 @@ github.com##.dashboard-changelog:upward(aside,div)
 github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"])
 github.com##.ActionListItem:has(a:is([href^="/codespaces"], [href^="/explore"]))
 github.com##.diffbar-item:has(a[href^="/codespaces"])
+
+! Replace all avatar images with a black placeholder
+! see: https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
+||avatars*.githubusercontent.com/u/*$image,redirect=none
+||avatars.githubusercontent.com/in/*$image,redirect=none

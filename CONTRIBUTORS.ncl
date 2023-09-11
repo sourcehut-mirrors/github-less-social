@@ -1,2 +1,6 @@
 let Folk = import "ncl/folk.ncl" in
-[] | Array Folk
+[
+	{
+		name = "jman"
+	}
+] | Array Folk
