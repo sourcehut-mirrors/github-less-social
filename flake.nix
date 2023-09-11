@@ -15,22 +15,37 @@
     let
       name = "github-less-social";
 
-      supportedSystems = [ "x86_64-linux" ];
+      forAllSystems = nixpkgs.lib.genAttrs nixpkgs.lib.platforms.unix;
 
-      forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
-
+      nixpkgsFor = forAllSystems (system: import nixpkgs {
+        inherit system;
+        config = { };
+        overlays = [ ];
+      });
     in
     {
       packages = forAllSystems (system:
-        #let
-        #  pkgs = import nixpkgs { inherit system; };
-        #in
-        {
+        let pkgs = nixpkgsFor.${system}; in {
           "${name}-readme" = sourcehut-asciidoc-renderer.renderAsciiDoc {
             inherit system;
             baseDir = ./.;
             sourceFile = ./README.adoc;
           };
+        });
+
+      devShells = forAllSystems (system:
+        let pkgs = nixpkgsFor.${system}; in {
+          ${name} = pkgs.mkShell {
+            inherit name;
+            inputsFrom = builtins.attrValues self.packages.${system};
+            buildInputs = with pkgs; [
+              nickel
+              nixpkgs-fmt
+              topiary
+            ];
+          };
+
+          default = self.devShells.${system}.${name};
         });
     };
 }
