@@ -33,7 +33,7 @@ This project is licensed under GNU Lesser General Public License, version 2.1 (h
 
 Send patches to the mailing list: https://lists.sr.ht/~toastal/github-less-social
 
-Don’t forget to add yourself to `./CONTRIBUTORS.dhall`.
+Don’t forget to add yourself to `./CONTRIBUTORS.ncl`.
 
 == Funding
 
