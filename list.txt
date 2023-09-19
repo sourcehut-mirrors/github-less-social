@@ -27,3 +27,5 @@ github.com##.js-feed-item-component footer .js-comment
 github.com##[data-testid="copilot-popover-button"]
 github.com##article:has(h2:has-text(/(The Download|recommended by GitHub)\s*$/))
 github.com##article a:first-child:has(img[src*=".githubusercontent.com/"])
+
+||collector.github.com^
