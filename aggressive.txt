@@ -26,3 +26,4 @@ github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], 
 ! see: https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
 ||avatars*.githubusercontent.com/u/*$image,redirect=none
 ||avatars.githubusercontent.com/*$image,redirect=none
+||repository-images.githubusercontent.com/*$image,redirect=none
