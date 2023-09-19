@@ -6,7 +6,7 @@
 ! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/COPYING.lesser.txt
 ! Support: https://todo.sr.ht/~toastal/github-less-social
 
-github.com##[aria-label="Explore"]
+github.com##aside[aria-label="Explore"]
 github.com##[aria-label="Explore repositories"]
 github.com##.js-yearly-contributions
 github.com###dashboard [aria-labelledby="feed-original"] :is(.follow, .watch_started, .starring-container, [classes*="watch_started"], [classes*="follow"])
