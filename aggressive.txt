@@ -8,10 +8,6 @@
 
 !#include list.txt
 
-! Remove all URLs cached by GitHub’s CDN as many of these are badges and
-! other distractions
-||camo.githubusercontent.com/*$domain=github.com
-
 github.com##.js-feed-item-component a[aria-label^="Sponsor "]
 github.com##aside[aria-label="Star Topics"]
 github.com##.TimelineItem .avatar
@@ -21,6 +17,10 @@ github.com###issuecomment-new > div:has(.octicon-info)
 github.com##.dashboard-changelog:upward(aside,div)
 github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"])
 github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], [href^="/explore"]))
+
+! Remove all URLs cached by GitHub’s CDN as many of these are badges and
+! other distractions
+||camo.githubusercontent.com/*$domain=github.com
 
 ! Replace all avatar images with a black placeholder
 ! see: https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
