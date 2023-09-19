@@ -25,4 +25,4 @@ github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], 
 ! Replace all avatar images with a black placeholder
 ! see: https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
 ||avatars*.githubusercontent.com/u/*$image,redirect=none
-||avatars.githubusercontent.com/in/*$image,redirect=none
+||avatars.githubusercontent.com/*$image,redirect=none
