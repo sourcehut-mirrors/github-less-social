@@ -25,3 +25,4 @@ github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="copilot"]
 github.com##.AppHeader .Overlay-footer .color-fg-subtle.text-small
 github.com##.js-feed-item-component footer .js-comment
 github.com##[data-testid="copilot-popover-button"]
+github.com##article:has(h2:has-text(/The Download\s*$/))
