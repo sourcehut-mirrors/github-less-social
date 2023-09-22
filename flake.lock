@@ -16,43 +16,29 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1694767346,
-        "narHash": "sha256-5uH27SiVFUwsTsqC5rs3kS7pBoNhtoy9QfTP9BmknGk=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "ace5093e36ab1e95cb9463863491bee90d5a4183",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "sourcehut-asciidoc-renderer": "sourcehut-asciidoc-renderer"
+        "sourcehut-restructuredtext-renderer": "sourcehut-restructuredtext-renderer"
       }
     },
-    "sourcehut-asciidoc-renderer": {
+    "sourcehut-restructuredtext-renderer": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1694972970,
-        "narHash": "sha256-rYIm84/nZSNf/KJad6+M4+FnaF+c9GQHEOfres65VlQ=",
+        "lastModified": 1695300955,
+        "narHash": "sha256-HEydLLDnxVimFGtxLXA9qRG+STuzmSAAC1JzvXZvidQ=",
         "owner": "~toastal",
-        "repo": "sourcehut-asciidoc-renderer",
-        "rev": "f3e98628bc08e3337a66efcc69465e8962f70d61",
+        "repo": "sourcehut-restructuredtext-renderer",
+        "rev": "9e35cc1aa1e9633c4a676b7185d3a957052903d0",
         "type": "sourcehut"
       },
       "original": {
         "owner": "~toastal",
-        "repo": "sourcehut-asciidoc-renderer",
+        "repo": "sourcehut-restructuredtext-renderer",
         "type": "sourcehut"
       }
     }

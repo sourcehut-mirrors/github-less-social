@@ -3,33 +3,27 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    sourcehut-asciidoc-renderer.url = "sourcehut:~toastal/sourcehut-asciidoc-renderer";
+    sourcehut-restructuredtext-renderer = {
+      url = "sourcehut:~toastal/sourcehut-restructuredtext-renderer";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , sourcehut-asciidoc-renderer
-    , ...
-    }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs:
     let
       name = "github-less-social";
 
       forAllSystems = nixpkgs.lib.genAttrs nixpkgs.lib.platforms.unix;
 
-      nixpkgsFor = forAllSystems (system: import nixpkgs {
-        inherit system;
-        config = { };
-        overlays = [ ];
-      });
+      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
     in
     {
       packages = forAllSystems (system:
         let pkgs = nixpkgsFor.${system}; in {
-          "${name}-readme" = sourcehut-asciidoc-renderer.renderAsciiDoc {
+          readme = inputs.sourcehut-restructuredtext-renderer.renderReStructuredText {
             inherit system;
             baseDir = ./.;
-            sourceFile = ./README.adoc;
+            sourceFile = ./README.rst;
           };
         });
 
