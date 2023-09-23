@@ -60,7 +60,7 @@ Don’t forget to add yourself to ``./CONTRIBUTORS.ncl`` (else I will do it for 
 Funding
 =======
 
-If you want to make a small contribution to ð maintenance of ðis & oðer projects.
+If you want to make a small contribution to the maintenance of this & other projects.
 
 Crowdfunding
 	• Liberapay: `@toastal <https://liberapay.com/toastal>`_
