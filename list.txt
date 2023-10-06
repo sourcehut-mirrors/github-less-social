@@ -29,7 +29,7 @@ github.com##article:has(h2:has-text(/(The Download|recommended by GitHub)\s*$/))
 github.com##article a:first-child:has(img[src*=".githubusercontent.com/"])
 github.com##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 github.com##.blankslate:has(h3:has-text(Create your first list), h3:has-text(Explore GitHub))
-github.com##a[href="https://shop.github.com"]
+github.com##a:is([href="https://shop.github.com"], [href="https://services.github.com/")
 
 github.blog##section#newsletter
 github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
