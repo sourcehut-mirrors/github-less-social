@@ -50,12 +50,13 @@ This project is licensed under GNU Lesser General Public License, version 2.1 (L
 .. _LGPL-2.1-or-later: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
 
 
-Contributing
-============
+Pitching in
+===========
 
 Send patches to the mailing list: https://lists.sr.ht/~toastal/github-less-social
 
-Don’t forget to add yourself to ``./CONTRIBUTORS.ncl`` (else I will do it for you using the ‘name’ in the patch).
+Don’t forget to add yourself to ``./HELPERS.ncl`` (else I will do it for you using the ‘name’ in the patch).
+
 
 Funding
 =======
