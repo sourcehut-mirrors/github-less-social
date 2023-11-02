@@ -12,7 +12,7 @@ To give Microsoft GitHub some credit, it’s because they do a decent job with `
 
 .. TIP::
 
-	*Do* encourage projects to migrate to or support mirrors on libre code forges like the one here on SourceHut.
+	*Do* encourage projects to migrate to or support mirrors on free (as in freedom) code forges like the one here on SourceHut.
 
 
 Usage
