@@ -32,6 +32,7 @@ github.com##.blankslate:has(h3:has-text(Create your first list), h3:has-text(Exp
 github.com##a:is([href="https://shop.github.com"], [href="https://services.github.com/")
 github.com##.search-results-page div[class^="Box-sc-"]:has(> a[href="https://docs.github.com/issues"])
 
+github.blog##.blog-header .btn-mktg
 github.blog##section#newsletter
 github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 
