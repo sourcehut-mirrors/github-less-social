@@ -1,7 +1,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2023 toastal
 ! Title: GitHub Less Social
-! Version: 2023.08.29
+! Version: 2023.11.29
 ! Homepage: https://sr.ht/~toastal/github-less-social/
 ! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/COPYING.lesser.txt
 ! Support: https://todo.sr.ht/~toastal/github-less-social
@@ -29,7 +29,7 @@ github.com##article:has(h2:has-text(/(The Download|recommended by GitHub)\s*$/))
 github.com##article a:first-child:has(img[src*=".githubusercontent.com/"])
 github.com##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 github.com##.blankslate:has(h3:has-text(Create your first list), h3:has-text(Explore GitHub))
-github.com##a:is([href="https://shop.github.com"], [href="https://services.github.com/")
+github.com##a:is([href="https://shop.github.com"], [href="https://services.github.com/"])
 github.com##.search-results-page div[class^="Box-sc-"]:has(> a[href="https://docs.github.com/issues"])
 
 github.blog##.blog-header .btn-mktg
