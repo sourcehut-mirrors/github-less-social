@@ -10,7 +10,7 @@ github.com##aside[aria-label="Explore"]
 github.com##[aria-label="Explore repositories"]
 github.com##.js-yearly-contributions
 github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
-github.com###issuecomment-new .timeline-comment~.Box:last-child
+github.com###issuecomment-new div:has(#new_comment_form) ~ .Box:last-child
 github.com##[aria-label*="by GitHub staff"][aria-label*="recommendation"]:upward(article)
 github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
 github.com##a[href="/trending/developers"]:upward(.Box-header):upward(.Box)
