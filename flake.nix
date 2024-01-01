@@ -22,8 +22,11 @@
         let pkgs = nixpkgsFor.${system}; in {
           readme = inputs.sourcehut-restructuredtext-renderer.renderReStructuredText {
             inherit system;
-            baseDir = ./.;
             sourceFile = ./README.rst;
+            baseDir = pkgs.lib.fileset.toSource {
+              root = ./.;
+              fileset = ./README.rst;
+            };
           };
         });
 
