@@ -18,6 +18,7 @@ github.com##.dashboard-changelog:upward(aside,div)
 github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"])
 github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], [href$="/codespaces"], [href^="https://github.com/codespaces"], [href^="/explore"]))
 github.com##li > a[role="menuitem"][href="https://github.dev/"]
+github.com##[role="option"][data-value="Ask Copilot"]
 
 ! Remove all URLs cached by GitHub’s CDN as many of these are badges and
 ! other distractions
