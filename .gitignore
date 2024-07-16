@@ -3,6 +3,8 @@
 
 # NO to Microsoft
 *.code-workspace
+.devcontainer
+devcontainer.json
 .github/
 .vscode/
 
