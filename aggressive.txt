@@ -30,3 +30,7 @@ github.com##.projects-splash-banner
 ||avatars*.githubusercontent.com/u/*$image,redirect=none
 ||avatars.githubusercontent.com/*$image,redirect=none
 ||repository-images.githubusercontent.com/*$image,redirect=none
+
+! Remove Microsoft-GitHub-account-only comment sections
+||giscus.app^$third-party
+||utteranc.es^$third-party

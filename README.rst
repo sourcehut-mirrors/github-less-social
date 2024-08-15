@@ -33,7 +33,7 @@ It’s required that you start with an ad blocker add-on that supports filters. 
 	#. Add ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt`` to a new line
 	#. Click the big check mark button in the actions bar to apply
 
-For a more aggressive option (opinionated: hides more upsell items, images, :ab:`etc.`), use ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt`` instead.
+For a more aggressive option (opinionated: hides more upsell items, images, MS-GitHub-account-required comment sections, & so on), use ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt`` instead.
 
 Additionally I have a user style @ ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css`` that will tone down some of the bright colors like those from avatars & emoji (but will show color on hover).
 
