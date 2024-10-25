@@ -6,7 +6,6 @@ packages:
    - nixos.curl
    - nixos.hut
    - nixos.jq
-   - nixos.nixUnstable
 environment:
    repo_id: "142654"
    repo_name: "github-less-social"
