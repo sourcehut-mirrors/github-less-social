@@ -12,8 +12,7 @@ github.com##.js-feed-item-component a[aria-label^="Sponsor "]
 github.com##aside[aria-label="Star Topics"]
 github.com##.TimelineItem .avatar
 github.com##.page-responsive .timeline-comment--caret::before,.page-responsive .timeline-comment--caret::after
-github.com###issuecomment-new .protip
-github.com###issuecomment-new > div:has(.octicon-info)
+github.com###issuecomment-new :is(.protip, > div:has(.octicon-info))
 github.com##.dashboard-changelog:upward(aside,div)
 github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"])
 github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], [href$="/codespaces"], [href^="https://github.com/codespaces"], [href^="/explore"]))
