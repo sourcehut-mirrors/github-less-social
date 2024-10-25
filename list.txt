@@ -37,6 +37,6 @@ github.blog##.blog-header .btn-mktg
 github.blog##section#newsletter
 github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 
-githubstatus.com:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
+githubstatus.com##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 
 ||collector.github.com^
