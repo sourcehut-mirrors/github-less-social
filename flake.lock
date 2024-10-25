@@ -29,11 +29,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1709196801,
-        "narHash": "sha256-nomdpky0P21Hd5liNgaiiqDhXhBKYzIAdg8OheDV0Xg=",
+        "lastModified": 1729851066,
+        "narHash": "sha256-gmRLEY1HdrVe5IVjwP+E4K+kouvHAoU60y3Z3p+2IeA=",
         "owner": "~toastal",
         "repo": "sourcehut-restructuredtext-renderer",
-        "rev": "8f9575b72439de74eb9fc5564b03cb7f913b3a67",
+        "rev": "d01fc9e37e83c1642b1274680749c0426efffab4",
         "type": "sourcehut"
       },
       "original": {
