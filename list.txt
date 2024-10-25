@@ -40,3 +40,10 @@ github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.l
 githubstatus.com##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 
 ||collector.github.com^
+
+# Corner banners
+||github.blog/wp-content/uploads/$image,third-party
+||unpkg.com/github-corner*$image,script
+##a.github-corner:is([href^="http://github.com"], [href^="https://github.com"]):has(svg)
+##a:is([href^="http://github.com"], [href^="https://github.com"]):has(img[alt="Fork me on GitHub"])
+##a[data-ribbon]:is([href^="http://github.com"], [href^="https://github.com"])
