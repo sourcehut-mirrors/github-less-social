@@ -32,6 +32,8 @@ github.com##.blankslate:has(h3:has-text(Create your first list), h3:has-text(Exp
 github.com##a:is([href="https://shop.github.com"], [href="https://services.github.com/"])
 github.com##.search-results-page div[class^="Box-"]:has(> a[href="https://docs.github.com/issues"])
 github.com##[data-testid="search-sub-header"] ~ [class^="Box-"] a[href^="/sponsors"]:upward([class^="Box-"])
+github.com###global-copilot-menu-button
+github.com##.AppHeader-CopilotChat
 
 github.blog##.blog-header .btn-mktg
 github.blog##section#newsletter
