@@ -19,6 +19,7 @@ github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], 
 github.com##li > a[role="menuitem"][href="https://github.dev/"]
 github.com##[role="option"][data-value="Ask Copilot"]
 github.com##.projects-splash-banner
+github.com##.Box:has(button[id^="dialog-show-sponsors-issue"])
 
 ! Remove all URLs cached by GitHub’s CDN as many of these are badges and
 ! other distractions
