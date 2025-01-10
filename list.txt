@@ -34,6 +34,9 @@ github.com##.search-results-page div[class^="Box-"]:has(> a[href="https://docs.g
 github.com##[data-testid="search-sub-header"] ~ [class^="Box-"] a[href^="/sponsors"]:upward([class^="Box-"])
 github.com###global-copilot-menu-button
 github.com##.AppHeader-CopilotChat
+github.com##.copilotPreview__container
+
+/https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
 
 github.blog##.blog-header .btn-mktg
 github.blog##section#newsletter
