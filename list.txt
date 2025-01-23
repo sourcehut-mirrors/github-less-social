@@ -22,6 +22,7 @@ github.com##.blankslate p:has(a[href*="youtube.com/GitHub"])
 github.com##.flash:has(a[href^="/join"])
 github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Suggested Workflows"))
 github.com##a:is([href*="action=upgrade"], [href*="copilot"], [href*="enterprise_plan"], [href$="marketplace"], [href*="tab=stars"]):has([data-component^="ActionList.Item"])
+github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="copilot"], [href*="enterprise_plan"], [href$="marketplace"], [href*="tab=stars"]))
 github.com##.AppHeader .Overlay-footer .color-fg-subtle.text-small
 github.com##.js-feed-item-component footer .js-comment
 github.com##[data-testid="copilot-popover-button"]
