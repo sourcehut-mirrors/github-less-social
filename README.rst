@@ -49,8 +49,9 @@ following instructions are *only* for this add-on.
 	2. Go to “Filter lists”
 	3. Scroll to the bottom of the list to “Custom”
 	4. Enable “Import…” if not checked already
-	5. Add ``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/list.txt``
-		*or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt``
+	5. Add
+	   ``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/list.txt``
+	   *or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt``
 	   to a new line
 	6. Click the big check mark button in the actions bar to apply
 
