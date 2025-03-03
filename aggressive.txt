@@ -2,9 +2,9 @@
 ! Copyright © 2022–2024 toastal
 ! Title: MS GitHub Less Social — Aggressive
 ! Version: 2024.08.15
-! Homepage: https://sr.ht/~toastal/github-less-social/
-! License: https://git.sr.ht/~toastal/github-less-social/blob/trunk/COPYING.lesser.txt
-! Support: https://todo.sr.ht/~toastal/github-less-social
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
 
 !#include list.txt
 
