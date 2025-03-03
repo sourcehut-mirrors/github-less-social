@@ -1,5 +1,5 @@
 ===============================================================================
-GitHub Less Social
+Microsoft’s GitHub Less Social
 ===============================================================================
 
 .. role:: del
@@ -20,7 +20,16 @@ gets to be concise.
 .. tip::
 
 	*Do* encourage projects to migrate to or support mirrors on free (as in
-freedom) code forges like the one here on SourceHut.
+	freedom) code forges like the ones this project uses, Codeberg & SourceHut.
+
+Git Mirrors
+===============================================================================
+
+Codeberg
+	https://codeberg.org/toastal/github-less-social
+
+SourceHut
+	https://git.sr.ht/~toastal/github-less-social
 
 
 Usage
@@ -40,19 +49,23 @@ following instructions are *only* for this add-on.
 	2. Go to “Filter lists”
 	3. Scroll to the bottom of the list to “Custom”
 	4. Enable “Import…” if not checked already
-	5. Add ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt``
+	5. Add
+		``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/list.txt``
+		*or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt``
 	   to a new line
 	6. Click the big check mark button in the actions bar to apply
 
 For a more aggressive option (opinionated: hides more upsell items, images,
 MS-GitHub-account-required comment sections, & so on), use
-``https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt``
+``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/aggressive.txt``
+*or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt``
 instead.
 
 Additionally I have a user style @
-``https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css`` that
-will tone down some of the bright colors like those from avatars & emoji (but
-will show color on hover).
+``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css``
+*or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css``
+that will tone down some of the bright colors like those from avatars & emoji
+(but will show color on hover).
 
 .. warning::
 
@@ -74,6 +87,9 @@ in this project for details.
 Pitching in
 ===============================================================================
 
+Send pull request to:
+https://codeberg.org/toastal/github-less-social/pulls
+
 Send patches to the mailing list:
 https://lists.sr.ht/~toastal/github-less-social
 
@@ -88,7 +104,7 @@ If you want to make a small contribution to the maintenance of this & other
 projects:
 
 Crowdfunding
-	• Liberapay: `@toastal <https://liberapay.com/toastal>`_
+	• Liberapay: `toastal <https://liberapay.com/toastal>`_
 
 Cryptocurrency
 	• Bitcoin: 39nLVxrXPnD772dEqWFwfZZbfTv5BvV89y_
