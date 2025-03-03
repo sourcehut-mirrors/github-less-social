@@ -96,6 +96,10 @@ https://lists.sr.ht/~toastal/github-less-social
 Don’t forget to add yourself to ``./HELPERS.ncl`` (else I will do it for you
 using the just the ‘name’ in the patch).
 
+If needed, there is a `chat room`_ for the project.
+
+.. _chat room: xmpp:github-less-social@chat.toastal.in.th?join
+
 
 Funding
 ===============================================================================
