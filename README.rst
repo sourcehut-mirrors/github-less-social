@@ -25,7 +25,7 @@ gets to be concise.
 Git Mirrors
 ===============================================================================
 
-Codeberg
+Codeberg (primary)
 	https://codeberg.org/toastal/github-less-social
 
 SourceHut
