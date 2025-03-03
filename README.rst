@@ -56,23 +56,27 @@ will show color on hover).
 
 .. warning::
 
-	Don’t use Google Chrome. Firefox, LibreWolf, Mullvad, Ungoogled Chromium,
-	Thorium, Brave, & all the others are a better option. If you’re concerned
+	Don’t use Google Chrome. LibreWolf, Mullvad, Ungoogled Chromium, Thorium,
+	Firefox, Brave, & all the others are a better option. If you’re concerned
 	about ads, you should be aware that Google’s entire browser is adware.
 
 
 License
 ===============================================================================
 
-This project is licensed under GNU Lesser General Public License, version 2.1 (LGPL-2.1-or-later_) – see the ``COPYING.txt`` & ``COPYING.lesser.text`` files in this project for details.
+This project is licensed under GNU Lesser General Public License, version 2.1
+(LGPL-2.1-or-later_) – see the ``COPYING.txt`` & ``COPYING.lesser.text`` files
+in this project for details.
 
-.. _LGPL-2.1-or-later: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
+	.. _LGPL-2.1-or-later:
+	https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
 
 
 Pitching in
 ===============================================================================
 
-Send patches to the mailing list: https://lists.sr.ht/~toastal/github-less-social
+Send patches to the mailing list:
+https://lists.sr.ht/~toastal/github-less-social
 
 Don’t forget to add yourself to ``./HELPERS.ncl`` (else I will do it for you
 using the just the ‘name’ in the patch).
