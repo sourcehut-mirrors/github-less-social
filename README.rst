@@ -4,12 +4,12 @@ GitHub Less Social
 
 .. role:: del
 
-I don’t wish to use the proprietary code forge, but when I do I want less
+I don’t wish to use the proprietary code forge, but when I do, I want less
 social features in my face trying to get me to ‘engage’. This filter list looks
 to hide features that involve distractions & clutter on the platform. The base
 list tries to clean up the feeds quite a bit, pushing some of the bright colors
 & button to when you actually click into the item for a detail view, as well as
-the most gross upsells.
+the most gross upsells & :ac:`AI` bullshit.
 
 To give Microsoft GitHub some credit, it’s because they do a decent job with
 ``aria-*`` tags for accessibility & :del:`sane markup` (markup *used* to be
@@ -68,8 +68,7 @@ This project is licensed under GNU Lesser General Public License, version 2.1
 (LGPL-2.1-or-later_) – see the ``COPYING.txt`` & ``COPYING.lesser.text`` files
 in this project for details.
 
-	.. _LGPL-2.1-or-later:
-	https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
+.. _LGPL-2.1-or-later: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
 
 
 Pitching in
