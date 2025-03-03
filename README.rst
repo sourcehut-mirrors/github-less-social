@@ -57,8 +57,8 @@ will show color on hover).
 .. warning::
 
 	Don’t use Google Chrome. LibreWolf, Mullvad, Ungoogled Chromium, Thorium,
-	Firefox, Brave, & all the others are a better option. If you’re concerned
-	about ads, you should be aware that Google’s entire browser is adware.
+	& all the others are a better option. If you’re concerned about ads, you
+	should be aware that Google’s entire browser is adware.
 
 
 License
