@@ -46,7 +46,7 @@ following instructions are *only* for this add-on.
 	To add GitHub Less Social filter list:
 
 	1. Open uBlock Origin’s settings
-	2. Go to “Filter lists”
+	2. Go to “Filter lists” tab
 	3. Scroll to the bottom of the list to “Custom”
 	4. Enable “Import…” if not checked already
 	5. Add
@@ -59,7 +59,8 @@ For a more aggressive option (opinionated: hides more upsell items, images,
 MS-GitHub-account-required comment sections, & so on), use
 ``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/aggressive.txt``
 *or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt``
-instead.
+instead. If you do not like a part of these lists, feel free to assemble your own
+using the ``modules/*.txt`` files.
 
 Additionally I have a user style @
 ``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css``

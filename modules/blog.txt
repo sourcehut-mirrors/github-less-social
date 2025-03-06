@@ -1,0 +1,13 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Blog
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Microsoft GitHub’s Blog
+
+github.blog##.blog-header .btn-mktg
+github.blog##section#newsletter
+github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
