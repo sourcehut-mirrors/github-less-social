@@ -65,7 +65,11 @@ Additionally I have a user style @
 ``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css``
 *or* ``https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css``
 that will tone down some of the bright colors like those from avatars & emoji
-(but will show color on hover).
+(but will show color on hover). These also duplicate some of the uBlock hides
+for users without add-on support. An aggressive option is @
+``https://codeberg.org/toastal/github-less-social/raw/branch/trunk/aggressive.css``
+*or*
+``https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.css``
 
 .. warning::
 
