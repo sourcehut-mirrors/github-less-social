@@ -14,6 +14,8 @@ github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/mar
 
 ! Microsoft GitHub’s code editor & codespaces are vendor lock-in
 github.com##li > a[role="menuitem"][href="https://github.dev/"]
+github.com##.react-overview-code-button-action-list button[role="tab"]:has-text(Codespaces)
+||github.com/codespaces$xhr
 
 ! Even less sponsor uses
 github.com##.js-feed-item-component a[aria-label^="Sponsor "]

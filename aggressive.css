@@ -16,6 +16,7 @@
 	.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"]),
 
 	li > a[role="menuitem"][href="https://github.dev/"],
+	.react-overview-code-button-action-list :is([class^="TabNav"], [class*=" TabNav"]) + div:has([data-target="get-repo.codespaceList"]),
 
 	.js-feed-item-component a[aria-label^="Sponsor "],
 	.Box:has(button[id^="dialog-show-sponsors-issue"]),
