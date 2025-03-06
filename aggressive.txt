@@ -23,6 +23,9 @@ github.com##a[href$="/sponsors/explore"]:upward(div:is([class^="Box"],[class*=" 
 ! Even less social media
 github.com##aside[aria-label="Star Topics"]
 
+! Even less README trash
+github.com##img[data-canonical-src^="https://img.shields.io/"]
+
 ! Avatar images as distracting in some locations
 github.com##.TimelineItem .avatar
 
