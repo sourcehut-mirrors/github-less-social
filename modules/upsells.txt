@@ -1,0 +1,13 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Upsells
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Upsell to products or services
+
+github.com##.Layout-sidebar .BorderGrid-row:has(a[href$="actions/new"], form[action$="/dismiss_repository_notice"])
+github.com##:is(.ActionListItem, [class^="Item__LiBox"], [class*=" Item__LiBox"]):has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"]))
+github.com##:is(.global-footer, footer.footer) ul:has(a:is([href^="https://www.linkedin.com/company/github"], [href^="https://www.youtube.com/github"]))
