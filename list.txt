@@ -1,55 +1,87 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2025 toastal
 ! Title: MS GitHub Less Social
-! Version: 2025.03.04
+! Version: 2025.03.06
 ! Homepage: https://codeberg.org/toastal/github-less-social
 ! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
 ! Support: https://codeberg.org/toastal/github-less-social/issues
 
+! Tracking
+||collector.github.com^
+
+! Users should never feel pressured to join this proprietary platform. There
+! are already sign up / log in buttons
+github.com##.flash:has(a[href^="/join"])
+
+! Hide extra attempts to try to force engagement with feeds outside of their
+! explicit pages (largely removing “Explore” in places it shouldn’t be)
 github.com##aside[aria-label="Explore"]
 github.com##[aria-label="Explore repositories"]
-github.com##.js-yearly-contributions
-github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component) .js-comment
-github.com###issuecomment-new div:has(#new_comment_form) ~ .Box:last-child
-github.com##[aria-label*="by GitHub staff"][aria-label*="recommendation"]:upward(article)
-github.com##.Layout-sidebar a[href$="tab=achievements"]:upward(div)
-github.com##a[href="/trending/developers"]:upward(.Box-header):upward(.Box)
-github.com##img[data-canonical-src^="https://contributors-img.web.app"]
-github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
 github.com##form[action*="promo"]
-github.com##.gist-banner.gist-detail-intro
+
+! Hide globally generated feeds for ‘trending’ content or MS GitHub asserting
+! itself into feeds.
+github.com##.Box:has(.Box-title a[href^="/trending"])
+github.com##article:has([aria-label*="by GitHub staff"][aria-label*="recommendation"])
 github.com##.blankslate p:has(a[href*="youtube.com/GitHub"])
-github.com##.flash:has(a[href^="/join"])
-github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Suggested Workflows"))
-github.com##a:is([href*="action=upgrade"], [href*="copilot"], [href*="enterprise_plan"], [href$="marketplace"], [href*="tab=stars"]):has([data-component^="ActionList.Item"])
-github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="copilot"], [href*="enterprise_plan"], [href$="marketplace"], [href*="tab=stars"]))
-github.com##.AppHeader .Overlay-footer .color-fg-subtle.text-small
-github.com##.js-feed-item-component footer .js-comment
-github.com##[data-testid="copilot-popover-button"]
 github.com##article:has(h2:has-text(/(The Download|recommended by GitHub)\s*$/))
-github.com##article a:first-child:has(img[src*=".githubusercontent.com/"])
-github.com##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
 github.com##.blankslate:has(h3:has-text(Create your first list), h3:has-text(Explore GitHub))
 github.com##a:is([href="https://shop.github.com"], [href="https://services.github.com/"])
-github.com##.search-results-page div[class^="Box-"]:has(> a[href="https://docs.github.com/issues"])
+
+! Hide extra popularity contest (‘stars’) & other places that pressure users
+! into making more contributions on this platform. Free software relies on
+! contributions, but gamification or inducing anxiety on one’s amount of
+! contributions can often be harmful — especially if we consider the pressure
+! to push towards permissive licenses that the corporations encourage but
+! rarely donate back to with support or finances.
+github.com##.js-yearly-contributions
+github.com##.Layout-sidebar .js-profile-editable-replace div:has(div > a[href$="tab=achievements"])
+github.com##a[href*="tab=stars"]:has([data-component^="ActionList.Item"])
+
+! Hide extra pressures to ‘sponsor’. Users can already find this info on the
+! primary page & Microsoft takes a cut of sponsorships; prefer donating on
+! another platform when possible anyhow.
+github.com###issuecomment-new div:has(#new_comment_form) ~ .Box:last-child
 github.com##[data-testid="search-sub-header"] ~ [class^="Box-"] a[href^="/sponsors"]:upward([class^="Box-"])
+
+! Upsell to products
+github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Suggested Workflows"))
+github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"]))
+github.com##:is(.global-footer, footer.footer) ul:has(a:is([href^="https://www.linkedin.com/company/github"], [href^="https://www.youtube.com/github"]))
+
+! Relatedly, but deserves a separate category: Copilot
+github.com##[data-testid="copilot-popover-button"]
 github.com###global-copilot-menu-button
 github.com##.AppHeader-CopilotChat
 github.com##.copilotPreview__container
+github.com##[role="option"][data-value="Ask Copilot"]
 
 /https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
 
-github.blog##.blog-header .btn-mktg
-github.blog##section#newsletter
-github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
+! Reactions in places that are distracting
+github.com##:is(#dashboard .body, .js-inline-dashboard-render, .js-feed-item-component footer) .js-comment
 
-githubstatus.com##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
+! READMEs are not RENDERMEs — this is what homepages are for.
+github.com##article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"])
+github.com##img[data-canonical-src^="https://contributors-img.web.app"]
+github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
 
-||collector.github.com^
+! Useless product banners & bubbles or pointing to trying to improve
+! MS GitHub’s content
+github.com##.gist-banner.gist-detail-intro
+github.com##.search-results-page div[class^="Box-"]:has(> a[href="https://docs.github.com/issues"])
 
-# Corner banners
+! Corner banners advertizing MS GitHub
 ||github.blog/wp-content/uploads/$image,third-party
 ||unpkg.com/github-corner*$image,script
 ##a.github-corner:is([href^="http://github.com"], [href^="https://github.com"]):has(svg)
 ##a:is([href^="http://github.com"], [href^="https://github.com"]):has(img[alt="Fork me on GitHub"])
 ##a[data-ribbon]:is([href^="http://github.com"], [href^="https://github.com"])
+
+! Microsoft GitHub’s Blog
+github.blog##.blog-header .btn-mktg
+github.blog##section#newsletter
+github.blog##:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"]))
+
+! Misc. (or I forgot what they did)
+github.com##.AppHeader .Overlay-footer .color-fg-subtle.text-small

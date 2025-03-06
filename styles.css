@@ -1,16 +1,21 @@
 /* ==UserStyle==
-@name         GitHub Less Social
-@namespace    github.com
-@description  Remove some distracting colors
+@name         MS GitHub Less Social
+@namespace    https://toast.al
+@description  Remove some distracting colors as well as duplicating some of the
+              list hiding for users without uBO support.
 @author       toastal <toastal@posteo.net> (https://toast.al)
-@homepageURL  https://sr.ht/~toastal/github-less-social/
-@supportURL   https://todo.sr.ht/~toastal/github-less-social
-@updateURL    https://git.sr.ht/~toastal/github-less-social/blob/trunk/styles.css
-@version      2023.02.19
+@homepageURL  https://codeberg.org/toastal/github-less-social
+@supportURL   https://codeberg.org/toastal/github-less-social/issues
+@updateURL    https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css
+@version      2025.03.06
 @license      LGPL-2.1-or-later
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
+	/* Grayscale images or lower opacity to avoid underscoring content. This can
+	 * be to disable the distraction of colors, or allow but remind users to
+	 * to be wary of a social feature.
+	 */
 	.avatar,
 	.avatar-user,
 	.filter-item,
@@ -37,5 +42,61 @@
 		cursor: not-allowed;
 		pointer-events: none;
 		user-select: none;
+	}
+
+	/* ``display: none`` for many of the same items from the filter lists since
+	 * not all browsers support uBlock, like the Sailfish OS browser for example.
+	 *
+	 * Unfortunately, as MS GitHub has joined the fad of no longer using
+	 * reasonably semantic CSS classes or even IDs, not all selectors can be
+	 * captured (such as anything specific to text like those in aria-label
+	 * attributes which sadly means for the best experience the UI will need to
+	 * be in English to support). But if it *can* be if it can be placed here,
+	 * there will be an effort to keep these in sync.
+	 */
+	.flash:has(a[href^="/join"]),
+
+	aside[aria-label="Explore"],
+	[aria-label="Explore repositories"],
+	form[action*="promo"],
+
+	.Box:has(.Box-title a[href^="/trending"]),
+	article:has([aria-label*="by GitHub staff"][aria-label*="recommendation"]),
+	.blankslate p:has(a[href*="youtube.com/GitHub"])
+
+	.js-yearly-contributions,
+	.Layout-sidebar .js-profile-editable-replace div:has(div > a[href$="tab=achievements"]),
+	a[href*="tab=stars"]:has([data-component^="ActionList.Item"]),
+
+	#issuecomment-new div:has(#new_comment_form) ~ .Box:last-child,
+
+	:is(#dashboard, .body, .js-inline-dashboard-render .js-feed-item-component footer) .js-comment,
+
+	.ActionListItem:has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"])),
+	:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"])),
+	a:is([href^="https://shop.github.com"], [href^="https://services.github.com/"]),
+
+	[data-testid="copilot-popover-button"],
+	#global-copilot-menu-button,
+	.AppHeader-CopilotChat,
+	.copilotPreview__container,
+	[role="option"][data-value="Ask Copilot"],
+
+	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"])
+	img[data-canonical-src^="https://contributors-img.web.app"],
+	img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"],
+
+	.gist-banner.gist-detail-intro,
+
+	.AppHeader .Overlay-footer .color-fg-subtle.text-small {
+		display: none;
+	}
+}
+
+@-moz-document domain("github.blog") {
+	.blog-header .btn-mktg,
+	section#newsletter,
+	:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"])) {
+		display: none;
 	}
 }
