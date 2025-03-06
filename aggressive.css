@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name         MS GitHub Less Social — Aggressive
+@namespace    https://toast.al
+@description  Remove some distracting colors as well as duplicating some of the
+              list hiding for users without uBO support.
+@author       toastal <toastal@posteo.net> (https://toast.al)
+@homepageURL  https://codeberg.org/toastal/github-less-social
+@supportURL   https://codeberg.org/toastal/github-less-social/issues
+@updateURL    https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css
+@version      2025.03.06
+@license      LGPL-2.1-or-later
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+	:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], [href$="/codespaces"], [href^="https://github.com/codespaces"], [href^="/explore"])),
+	.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"]),
+
+	li > a[role="menuitem"][href="https://github.dev/"],
+
+	.js-feed-item-component a[aria-label^="Sponsor "],
+	.Box:has(button[id^="dialog-show-sponsors-issue"]),
+
+	aside[aria-label="Star Topics"],
+
+	.TimelineItem .avatar,
+
+	#issuecomment-new :is(.protip, > div:has(.octicon-info)),
+
+	.page-responsive .timeline-comment--caret::before,.page-responsive .timeline-comment--caret::after,
+	.projects-splash-banner {
+		display: none;
+	}
+}
