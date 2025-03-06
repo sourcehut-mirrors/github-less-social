@@ -83,7 +83,8 @@
 	.copilotPreview__container,
 	[role="option"][data-value="Ask Copilot"],
 
-	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"])
+	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"]),
+	img:is([data-canonical-src^="https://img.shields.io/github/"],[data-canonical-src^="https://img.shields.io/reddit/"],[data-canonical-src^="https://img.shields.io/twitter/"]),
 	img[data-canonical-src^="https://contributors-img.web.app"],
 	img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"],
 
