@@ -78,6 +78,7 @@
 
 	:is(#dashboard, .body, .js-inline-dashboard-render .js-feed-item-component footer) .js-comment,
 
+	.Layout-sidebar .BorderGrid-row:has(a[href$="/toastal/FilterLists/actions/new"], form[action$="/dismiss_repository_notice"]),
 	:is(.ActionListItem, [class^="Item__LiBox"], [class*=" Item__LiBox"]):has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"])),
 	:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"])),
 	a:is([href^="https://shop.github.com"], [href^="https://services.github.com/"]),

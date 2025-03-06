@@ -45,8 +45,8 @@ github.com##a[href*="tab=stars"]:has([data-component^="ActionList.Item"])
 github.com###issuecomment-new div:has(#new_comment_form) ~ .Box:last-child
 github.com##[data-testid="search-sub-header"] ~ [class^="Box-"] a[href^="/sponsors"]:upward([class^="Box-"])
 
-! Upsell to products
-github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Suggested Workflows"))
+! Upsell to products or services
+github.com##.Layout-sidebar .BorderGrid-row:has(a[href$="/toastal/FilterLists/actions/new"], form[action$="/dismiss_repository_notice"])
 github.com##:is(.ActionListItem, [class^="Item__LiBox"], [class*=" Item__LiBox"]):has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"]))
 github.com##:is(.global-footer, footer.footer) ul:has(a:is([href^="https://www.linkedin.com/company/github"], [href^="https://www.youtube.com/github"]))
 
