@@ -22,6 +22,8 @@
 
 	aside[aria-label="Star Topics"],
 
+	img[data-canonical-src^="https://img.shields.io/"],
+
 	.TimelineItem .avatar,
 
 	#issuecomment-new :is(.protip, > div:has(.octicon-info)),
