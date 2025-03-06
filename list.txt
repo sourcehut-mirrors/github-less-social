@@ -8,6 +8,7 @@
 
 ! Tracking
 ||collector.github.com^
+||api.github.com/_private/browser/errors$xhr
 
 ! Users should never feel pressured to join this proprietary platform. There
 ! are already sign up / log in buttons
