@@ -1,0 +1,13 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Noisy Banners & Bubbles
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Useless product banners & bubbles or pointing to trying to improve
+! MS GitHub’s content.
+
+github.com##.gist-banner.gist-detail-intro
+github.com##.search-results-page div[class^="Box-"]:has(> a[href="https://docs.github.com/issues"])

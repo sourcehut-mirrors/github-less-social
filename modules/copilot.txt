@@ -1,0 +1,21 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Copilot
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Copilot has taken ‘our’ code, fed it to a black box, & are now selling our
+! data back to us. Maybe you question the legality of ownership of produced
+! code — especially with copyleft or even attribution clauses …or maybe you
+! just annoyed with all the stupid buttons/bars added.
+
+github.com##[data-testid="copilot-popover-button"]
+github.com###global-copilot-menu-button
+github.com##.AppHeader-CopilotChat
+github.com##.copilotPreview__container
+github.com##[role="option"][data-value="Ask Copilot"]
+
+/https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
+||github.com/github-copilot/chat$xhr
