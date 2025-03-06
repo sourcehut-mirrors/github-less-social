@@ -1,0 +1,13 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Noisy Sponsors Aggressive
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Even less sponsor uses
+
+github.com##.js-feed-item-component a[aria-label^="Sponsor "]
+github.com##.Box:has(button[id^="dialog-show-sponsors-issue"])
+github.com##a[href$="/sponsors/explore"]:upward(div:is([class^="Box"],[class*=" Box"]))

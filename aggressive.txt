@@ -6,49 +6,21 @@
 ! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
 ! Support: https://codeberg.org/toastal/github-less-social/issues
 
-!#include list.txt
-
-! Aggressive remove navigation items for upsells or vendor lock-in
-github.com##:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], [href$="/codespaces"], [href^="https://github.com/codespaces"], [href^="/explore"]))
-github.com##.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"])
-
-! Microsoft GitHub’s code editor & codespaces are vendor lock-in
-github.com##li > a[role="menuitem"][href="https://github.dev/"]
-github.com##.react-overview-code-button-action-list button[role="tab"]:has-text(Codespaces)
-||github.com/codespaces$xhr
-
-! Even less sponsor uses
-github.com##.js-feed-item-component a[aria-label^="Sponsor "]
-github.com##.Box:has(button[id^="dialog-show-sponsors-issue"])
-github.com##a[href$="/sponsors/explore"]:upward(div:is([class^="Box"],[class*=" Box"]))
+!#include ./list.txt
+!#include ./modules/upsells-aggressive.txt
+!#include ./modules/codespaces-&-code-editor.txt
+!#include ./modules/noisy-sponsors-aggressive.txt
+!#include ./modules/pro-tips.txt
+!#include ./modules/avatars-with-placeholders.txt
+!#include ./modules/avatars-in-feeds.txt
+!#include ./modules/readmes-are-not-rendermes-aggressive.txt
+!#include ./modules/ms-github-cdn-images.txt
+!#include ./modules/third-party-ms-github-comment-sections.txt
 
 ! Even less social media
 github.com##aside[aria-label="Star Topics"]
-
-! Even less README trash
-github.com##img[data-canonical-src^="https://img.shields.io/"]
-
-! Avatar images as distracting in some locations
-github.com##.TimelineItem .avatar
-
-! Pro-tip: leave me alone as I don’t want to be a guru of your product
-github.com###issuecomment-new :is(.protip, > div:has(.octicon-info))
 
 ! Misc.
 github.com##.page-responsive :is(.timeline-comment--caret::before, .timeline-comment--caret::after)
 github.com##.dashboard-changelog:upward(aside,div)
 github.com##.projects-splash-banner
-
-! Remove all URLs cached by GitHub’s CDN as many of these are badges and
-! other distractions
-||camo.githubusercontent.com/*$domain=github.com
-
-! Replace all avatar images with a black placeholder
-! see: https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
-||avatars*.githubusercontent.com/u/*$image,redirect=none
-||avatars.githubusercontent.com/*$image,redirect=none
-||repository-images.githubusercontent.com/*$image,redirect=none
-
-! Remove Microsoft-GitHub-account-only comment sections
-||giscus.app^$third-party
-||utteranc.es^$third-party

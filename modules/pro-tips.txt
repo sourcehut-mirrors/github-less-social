@@ -1,0 +1,10 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Pro Tips
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Pro-tip: leave me alone as I don’t want to be a guru of your product
+github.com###issuecomment-new :is(.protip, > div:has(.octicon-info))

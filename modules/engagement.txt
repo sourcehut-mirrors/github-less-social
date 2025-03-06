@@ -1,0 +1,14 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Engagement
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Hide extra attempts to try to force engagement with feeds outside of their
+! explicit pages (largely removing “Explore” in places it shouldn’t be)
+
+github.com##aside[aria-label="Explore"]
+github.com##[aria-label="Explore repositories"]
+github.com##form[action*="promo"]

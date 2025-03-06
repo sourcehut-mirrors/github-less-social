@@ -1,0 +1,18 @@
+! SPDX-License-Identifier: LGPL-2.1-or-later
+! Copyright © 2022–2025 toastal
+! Title: MS GitHub Less Social — Peer Pressure
+! Version: 2025.03.06
+! Homepage: https://codeberg.org/toastal/github-less-social
+! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
+! Support: https://codeberg.org/toastal/github-less-social/issues
+
+! Hide extra popularity contests (‘stars’) & other features that pressure users
+! into making more contributions on this platform. Free software relies on
+! contributions, but gamification or inducing anxiety on one’s amount of
+! contributions can often be harmful — especially if we consider the pressure
+! to push towards permissive licenses that the corporations encourage but
+! rarely donate back to with support or finances.
+
+github.com##.js-yearly-contributions
+github.com##.Layout-sidebar .js-profile-editable-replace div:has(div > a[href$="tab=achievements"])
+github.com##a[href*="tab=stars"]:has([data-component^="ActionList.Item"])
