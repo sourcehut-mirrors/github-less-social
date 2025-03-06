@@ -57,6 +57,7 @@ github.com##.copilotPreview__container
 github.com##[role="option"][data-value="Ask Copilot"]
 
 /https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
+||github.com/github-copilot/chat$xhr
 
 ! Reactions in places that distracting
 github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-component footer) .js-comment
