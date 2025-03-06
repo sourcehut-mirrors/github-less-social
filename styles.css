@@ -106,4 +106,10 @@
 	:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"])) {
 		display: none;
 	}
+
+	/* Links to proprietary social media
+	 */
+	a:is([href^="https://discord.gg/"],[href^="https://www.facebook.com/"],[href^="https://www.instagram.com/"],[href^="https://t.co/"],[href^="https://twitter.com/"],[href^="https://x.com/"],[href^="https://youtube.com"],[href^="https://youtu.be"]) {
+		text-decoration-line: line-through !important;
+	}
 }
