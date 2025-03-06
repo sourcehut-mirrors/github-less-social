@@ -78,7 +78,7 @@
 
 	:is(#dashboard, .body, .js-inline-dashboard-render .js-feed-item-component footer) .js-comment,
 
-	.ActionListItem:has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="/enterprise_plan"], [href$="marketplace"])),
+	.ActionListItem:has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"])),
 	:is(.global-footer, footer.footer) ul:has(a:is([href="https://www.linkedin.com/company/github"], [href="https://www.youtube.com/github"])),
 	a:is([href^="https://shop.github.com"], [href^="https://services.github.com/"]),
 
