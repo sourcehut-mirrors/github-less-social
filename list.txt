@@ -63,6 +63,7 @@ github.com##:is(#dashboard .body, .js-inline-dashboard-render .js-feed-item-comp
 
 ! READMEs are not RENDERMEs — this is what homepages are for.
 github.com##article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"])
+github.com##img:is([data-canonical-src^="https://img.shields.io/github/"],[data-canonical-src^="https://img.shields.io/reddit/"],[data-canonical-src^="https://img.shields.io/twitter/"])
 github.com##img[data-canonical-src^="https://contributors-img.web.app"]
 github.com##img[data-canonical-src^="https://opencollective.com/"][data-canonical-src*="tiers/supporter.svg"]
 
