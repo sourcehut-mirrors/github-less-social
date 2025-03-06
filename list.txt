@@ -47,7 +47,7 @@ github.com##[data-testid="search-sub-header"] ~ [class^="Box-"] a[href^="/sponso
 
 ! Upsell to products
 github.com##.Layout-sidebar .BorderGrid-cell:has(.Subhead-heading:has-text("Suggested Workflows"))
-github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="/enterprise_plan"], [href$="marketplace"]))
+github.com##.ActionListItem:has(a:is([href*="action=upgrade"], [href*="/copilot"], [href*="enterprise_plan"], [href$="marketplace"]))
 github.com##:is(.global-footer, footer.footer) ul:has(a:is([href^="https://www.linkedin.com/company/github"], [href^="https://www.youtube.com/github"]))
 
 ! Relatedly, but deserves a separate category: Copilot
