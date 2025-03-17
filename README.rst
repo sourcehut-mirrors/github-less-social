@@ -98,7 +98,7 @@ https://codeberg.org/toastal/github-less-social/pulls
 Send patches to the mailing list:
 https://lists.sr.ht/~toastal/github-less-social
 
-Don’t forget to add yourself to ``./meta/hackmate.ncl`` following Nickel spec
+Don’t forget to add yourself to ``./meta/hackmates.ncl`` following Nickel spec
 (else I will do it for you using the just the ‘name’ in the patch).
 
 If needed, there is a `chat room`_ for the project that can be used for
