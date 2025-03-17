@@ -7,11 +7,22 @@
 @homepageURL  https://codeberg.org/toastal/github-less-social
 @supportURL   https://codeberg.org/toastal/github-less-social/issues
 @updateURL    https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css
-@version      2025.03.06
+@version      2025.03.17
 @license      LGPL-2.1-or-later
 ==/UserStyle== */
 
 @-moz-document domain("github.com") {
+	/* MS GitHub-related lock-in */
+	[aria-labelledby="folders-and-files"] .react-directory-truncate > a:is([title=".devcontainer"], [title=".envrc"], [title=".github"], [title=".vscode"], [title="devcontainer.json"], [title$=".code-workspace"])::before {
+		content: "☣ ";
+	}
+
+	/* Long-term bad practice as goes against user freedom */
+	[aria-labelledby="folders-and-files"] .react-directory-truncate > a:is([title=".envrc"], [title=".husky"])::before {
+		content: "☢ ";
+	}
+
+	/* Blocking elements from aggressive list */
 	:is(.ActionListItem, .diffbar-item):has(a:is([href^="/codespaces"], [href$="/codespaces"], [href^="https://github.com/codespaces"], [href^="/explore"])),
 	.Header a:is([href^="/codespaces"], [href^="/explore"], [href^="/marketplace"]),
 
