@@ -7,7 +7,7 @@
 @homepageURL  https://codeberg.org/toastal/github-less-social
 @supportURL   https://codeberg.org/toastal/github-less-social/issues
 @updateURL    https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css
-@version      2025.03.06
+@version      2025.03.17
 @license      LGPL-2.1-or-later
 ==/UserStyle== */
 
@@ -42,6 +42,23 @@
 		cursor: not-allowed;
 		pointer-events: none;
 		user-select: none;
+	}
+
+	/* Unhighlight labeled/known bots; rank humans higher.
+	 */
+	.js-issue-row:has(.opened-by > a[data-hovercard-type="user"]:is([title$="[bot]"], [title$="r-ryantm"])) {
+		position: relative;
+		opacity: 0.6;
+
+		&:is(:hover, :focus-within) {
+			opacity: 0.8;
+		}
+
+		/* not all bots are labled with [bot] */
+		a[data-hovercard-type="user"]:not([title$="[bot]"])::after {
+			content: " [bot]";
+			font-weight: 500;
+		}
 	}
 
 	/* Links to proprietary social media
