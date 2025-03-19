@@ -66,6 +66,9 @@
 			font-weight: 500;
 		}
 	}
+	.js-comment-container:has(a.author[href^="/apps/"]) {
+		opacity: 0.75;
+	}
 
 	/* Links to proprietary social media
 	 */
