@@ -48,8 +48,12 @@
 
 	/* Unhighlight labeled/known bots; rank humans higher.
 	 */
-	.js-issue-row:has(.opened-by > a[data-hovercard-type="user"]:is([title$="[bot]"], [title$="r-ryantm"])) {
-		position: relative;
+	.js-issue-row:has(.opened-by > a[data-hovercard-type="user"]:is(
+		[title$="[bot]"],
+		[title$="ofborg"],
+		[title$="nixpkgs-merge-bot"],
+		[title$="r-ryantm"]
+	)) {
 		opacity: 0.6;
 
 		&:is(:hover, :focus-within) {
