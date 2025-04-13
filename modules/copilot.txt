@@ -16,6 +16,7 @@ github.com###global-copilot-menu-button
 github.com##.AppHeader-CopilotChat
 github.com##.copilotPreview__container
 github.com##[role="option"][data-value="Ask Copilot"]
+github.com##[data-testid="sidebar-section"]:has(:is([class^="CopilotWorkspaceButton-module"], [class*=" CopilotWorkspaceButton-module"]))
 
 /https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
 ||github.com/github-copilot/chat$xhr
