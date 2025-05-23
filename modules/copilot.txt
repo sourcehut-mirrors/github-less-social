@@ -20,3 +20,5 @@ github.com##[data-testid="sidebar-section"]:has(:is([class^="CopilotWorkspaceBut
 
 /https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
 ||github.com/github-copilot/chat$xhr
+
+docs.github.com##[aria-labelledby="ai-search-cta-heading"]
