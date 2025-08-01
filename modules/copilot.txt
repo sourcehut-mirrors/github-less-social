@@ -18,7 +18,8 @@ github.com##.copilotPreview__container
 github.com##[role="option"][data-value="Ask Copilot"]
 github.com##[data-testid="sidebar-section"]:has([class^="CopilotWorkspaceButton-module"], [class*=" CopilotWorkspaceButton-module"], [class^="CopilotAgentModeButton-module"], [class*=" CopilotAgentModeButton-module"])
 
-/https?:\/\/github\.githubassets\.com\/assets\/\S*copilot-chat\S*.js/$script,domain=github.com
+! The "assets/ui_" paths that contain "copilot-" are required for the site to function as expected.
+/https?:\/\/github\.githubassets\.com\/assets\/copilot-\S*\.js/$script,domain=github.com
 ||github.com/github-copilot/chat$xhr
 
 docs.github.com##[aria-labelledby="ai-search-cta-heading"]
