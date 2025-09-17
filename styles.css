@@ -111,6 +111,7 @@
 
 	[data-testid="copilot-popover-button"],
 	#global-copilot-menu-button,
+	#copilot-chat-header-button,
 	.AppHeader-CopilotChat,
 	.copilotPreview__container,
 	[role="option"][data-value="Ask Copilot"],
