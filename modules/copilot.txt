@@ -15,6 +15,7 @@ github.com##[data-testid="copilot-popover-button"]
 github.com###global-copilot-menu-button
 github.com##.AppHeader-CopilotChat
 github.com##.copilotPreview__container
+github.com###copilot-chat-header-button,
 github.com##[role="option"][data-value="Ask Copilot"]
 github.com##[data-testid="sidebar-section"]:has([class^="CopilotWorkspaceButton-module"], [class*=" CopilotWorkspaceButton-module"], [class^="CopilotAgentModeButton-module"], [class*=" CopilotAgentModeButton-module"])
 
