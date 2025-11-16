@@ -115,7 +115,8 @@
 	.AppHeader-CopilotChat,
 	.copilotPreview__container,
 	[role="option"][data-value="Ask Copilot"],
-	[data-testid="sidebar-section"]:has([class^="CopilotWorkspaceButton-module"], [class*=" CopilotWorkspaceButton-module"], [class^="CopilotAgentModeButton-module"], [class*=" CopilotAgentModeButton-module"])
+	[data-testid="sidebar-section"]:has([class^="CopilotWorkspaceButton-module"], [class*=" CopilotWorkspaceButton-module"], [class^="CopilotAgentModeButton-module"], [class*=" CopilotAgentModeButton-module"]),
+	#copilot-md-menu-anchor-new_comment_field,
 
 	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"]),
 	img:is([data-canonical-src^="https://img.shields.io/github/"],[data-canonical-src^="https://img.shields.io/reddit/"],[data-canonical-src^="https://img.shields.io/twitter/"]),
