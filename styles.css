@@ -115,7 +115,7 @@
 	.AppHeader-CopilotChat,
 	.copilotPreview__container,
 	[role="option"][data-value="Ask Copilot"],
-	[data-testid="sidebar-section"]:has([class^="CopilotWorkspaceButton-module"], [class*=" CopilotWorkspaceButton-module"], [class^="CopilotAgentModeButton-module"], [class*=" CopilotAgentModeButton-module"]),
+	[data-testid="sidebar-development-section"]:has([class^="CopilotWorkspaceButton"], [class*=" CopilotWorkspaceButton"], [class^="CopilotAgentModeButton"], [class*=" CopilotAgentModeButton"]),
 	#copilot-md-menu-anchor-new_comment_field,
 
 	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"]),
