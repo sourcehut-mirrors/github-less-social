@@ -18,7 +18,7 @@ github.com##.copilotPreview__container
 github.com###copilot-chat-header-button,
 github.com##[role="option"][data-value="Ask Copilot"]
 github.com##[data-testid="sidebar-development-section"]:has([class^="CopilotWorkspaceButton"], [class*=" CopilotWorkspaceButton"], [class^="CopilotAgentModeButton"], [class*=" CopilotAgentModeButton-module"])
-github.com###copilot-md-menu-anchor-new_comment_field
+github.com##[id^="copilot-md-menu-anchor"]
 
 ! The "assets/ui_" paths that contain "copilot-" are required for the site to function as expected.
 /https?:\/\/github\.githubassets\.com\/assets\/copilot-\S*\.js/$script,domain=github.com
