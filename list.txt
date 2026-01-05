@@ -16,6 +16,7 @@
 !#include ./modules/upsells.txt
 !#include ./modules/copilot.txt
 !#include ./modules/noisy-reactions.txt
+!#include ./modules/animations.txt
 !#include ./modules/readmes-are-not-rendermes.txt
 !#include ./modules/noisy-banners-&-bubbles.txt
 !#include ./modules/fork-me-banners.txt

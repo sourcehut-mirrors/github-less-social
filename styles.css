@@ -125,6 +125,8 @@
 
 	.gist-banner.gist-detail-intro,
 
+	:is([class^="PullRequestDiffsAnimation"], [class=*=" PullRequestDiffsAnimation"]),
+
 	.AppHeader .Overlay-footer .color-fg-subtle.text-small {
 		display: none;
 	}
