@@ -9,7 +9,7 @@ social features in my face trying to get me to ‘engage’. This filter list lo
 to hide features that involve distractions & clutter on the platform. The base
 list tries to clean up the feeds quite a bit, pushing some of the bright colors
 & button to when you actually click into the item for a detail view, as well as
-the most gross upsells & :ac:`AI` bullshit.
+the most gross upsells & Copilot bullshit.
 
 To give Microsoft GitHub some credit, it’s because they do a decent job with
 ``aria-*`` tags for accessibility & :del:`sane markup` (markup *used* to be
