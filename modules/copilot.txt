@@ -19,6 +19,8 @@ github.com###copilot-chat-header-button,
 github.com##[role="option"][data-value="Ask Copilot"]
 github.com##[data-testid="sidebar-development-section"]:has([class^="CopilotWorkspaceButton"], [class*=" CopilotWorkspaceButton"], [class^="CopilotAgentModeButton"], [class*=" CopilotAgentModeButton-module"])
 github.com##[id^="copilot-md-menu-anchor"]
+github.com##div.flex-items-center:has(button > svg.octicon-copilot)
+github.com##div[data-component="Portal"]:has(h1[data-component="Dialog.Title"]:has-text("Copilot"))
 
 ! The "assets/ui_" paths that contain "copilot-" are required for the site to function as expected.
 /https?:\/\/github\.githubassets\.com\/assets\/copilot-\S*\.js/$script,domain=github.com
