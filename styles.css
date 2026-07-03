@@ -118,6 +118,7 @@
 	[data-testid="sidebar-development-section"]:has([class^="CopilotWorkspaceButton"], [class*=" CopilotWorkspaceButton"], [class^="CopilotAgentModeButton"], [class*=" CopilotAgentModeButton"]),
 	[id^="copilot-md-menu-anchor"],
 	div.flex-items-center:has(button > svg.octicon-copilot),
+	li>button:has([class^="CopilotAppOpenAction"],[class*=" CopilotAppOpenAction"]),
 
 	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"]),
 	img:is([data-canonical-src^="https://img.shields.io/github/"],[data-canonical-src^="https://img.shields.io/reddit/"],[data-canonical-src^="https://img.shields.io/twitter/"]),
