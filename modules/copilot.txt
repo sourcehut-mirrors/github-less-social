@@ -24,7 +24,7 @@ github.com##div[data-component="Portal"]:has(h1[data-component="Dialog.Title"]:h
 github.com##li>button:has([class^="CopilotAppOpenAction"],[class*=" CopilotAppOpenAction"])
 
 ! The "assets/ui_" paths that contain "copilot-" are required for the site to function as expected.
-/https?:\/\/github\.githubassets\.com\/assets\/copilot-\S*\.js/$script,domain=github.com
+@@||github.githubassets.com/assets/copilot-*$script,domain=github.com
 ||github.com/github-copilot/chat$xhr
 
 docs.github.com##[aria-labelledby="ai-search-cta-heading"]
