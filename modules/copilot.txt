@@ -1,7 +1,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2026 toastal
 ! Title: MS GitHub Less Social — Copilot
-! Version: 2026.07.03
+! Version: 2026.10.15
 ! Homepage: https://codeberg.org/toastal/github-less-social
 ! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
 ! Support: https://codeberg.org/toastal/github-less-social/issues
@@ -28,3 +28,4 @@ github.com##li>button:has([class^="CopilotAppOpenAction"],[class*=" CopilotAppOp
 ||github.com/github-copilot/chat$xhr
 
 docs.github.com##[aria-labelledby="ai-search-cta-heading"]
+github.com##[data-component="ActionList.Item"]:has(img[src*="github-copilot-app"])
