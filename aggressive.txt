@@ -1,7 +1,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2026 toastal
 ! Title: MS GitHub Less Social — Aggressive
-! Version: 2026.10.15
+! Version: 2026.10.23
 ! Homepage: https://codeberg.org/toastal/github-less-social
 ! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
 ! Support: https://codeberg.org/toastal/github-less-social/issues

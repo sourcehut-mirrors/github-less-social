@@ -7,7 +7,7 @@
 @homepageURL  https://codeberg.org/toastal/github-less-social
 @supportURL   https://codeberg.org/toastal/github-less-social/issues
 @updateURL    https://codeberg.org/toastal/github-less-social/raw/branch/trunk/styles.css
-@version      2026.01.05
+@version      2026.10.23
 @license      LGPL-2.1-or-later
 ==/UserStyle== */
 
@@ -120,6 +120,7 @@
 	div.flex-items-center:has(button > svg.octicon-copilot),
 	li>button:has([class^="CopilotAppOpenAction"],[class*=" CopilotAppOpenAction"]),
 	[data-component="ActionList.Item"]:has(img[src*="github-copilot-app"]),
+	[data-component="Portal"] [data-component="ActionList.Item"]:has([href^="/copilot"]),
 
 	article.markdown-body a:first-child:has(img[src*=".githubusercontent.com/"]),
 	img:is([data-canonical-src^="https://img.shields.io/github/"],[data-canonical-src^="https://img.shields.io/reddit/"],[data-canonical-src^="https://img.shields.io/twitter/"]),

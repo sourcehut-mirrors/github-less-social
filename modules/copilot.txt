@@ -1,7 +1,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2022–2026 toastal
 ! Title: MS GitHub Less Social — Copilot
-! Version: 2026.10.15
+! Version: 2026.10.23
 ! Homepage: https://codeberg.org/toastal/github-less-social
 ! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
 ! Support: https://codeberg.org/toastal/github-less-social/issues
@@ -20,7 +20,8 @@ github.com##[role="option"][data-value="Ask Copilot"]
 github.com##[data-testid="sidebar-development-section"]:has([class^="CopilotWorkspaceButton"], [class*=" CopilotWorkspaceButton"], [class^="CopilotAgentModeButton"], [class*=" CopilotAgentModeButton-module"])
 github.com##[id^="copilot-md-menu-anchor"]
 github.com##div.flex-items-center:has(button > svg.octicon-copilot)
-github.com##div[data-component="Portal"]:has(h1[data-component="Dialog.Title"]:has-text("Copilot"))
+github.com##[data-component="Portal"]:has(h1[data-component="Dialog.Title"]:has-text("Copilot"))
+github.com##[data-component="Portal"] [data-component="ActionList.Item"]:has([href^="/copilot"])
 github.com##li>button:has([class^="CopilotAppOpenAction"],[class*=" CopilotAppOpenAction"])
 
 ! The "assets/ui_" paths that contain "copilot-" are required for the site to function as expected.
