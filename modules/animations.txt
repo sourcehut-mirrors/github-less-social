@@ -1,7 +1,7 @@
 ! SPDX-License-Identifier: LGPL-2.1-or-later
 ! Copyright © 2026 toastal
 ! Title: MS GitHub Less Social — Animations
-! Version: 2026.01.05
+! Version: 2026.11.13
 ! Homepage: https://codeberg.org/toastal/github-less-social
 ! License: https://codeberg.org/toastal/github-less-social/src/branch/trunk/COPYING.LESSER.txt
 ! Support: https://codeberg.org/toastal/github-less-social/issues
@@ -10,4 +10,4 @@
 
 ! “You made it to the end!”
 
-github.com##:is([class^="PullRequestDiffsAnimation"], [class*=" PullRequestDiffsAnimation"])
+github.com##[data-testid="diff-content"] > * > :is([class^="wrapper__"],[class*=" wrapper__"]):has([class^="animatedImage__"],[class*=" animatedImage__"])
